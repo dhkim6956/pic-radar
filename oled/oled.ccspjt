@@ -1,0 +1,43 @@
+[PROJECT]
+Target=oled.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.105dP-07/12/21
+Compiler=PCM
+CCSVersion=5.105Pd
+[Target Data]
+FileList=oled.c
+[Directories]
+Include=
+[C:\Users\dhkim\Documents\GitHub\pic16f877a_SSD1306_i2c_radar_project\oled\oled]
+Type=4
+[mru-list]
+1=oled.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=16-11-2021
+D1_L=4
+D1_L1=[85526]Project Opened.
+D1_L2=[85536]Started Editing.
+D1_L3=[85615]Stopped Editing.
+TotalEdit=2
+TotalDebug=0
+D1_E=2
+D1_D=0
+D1_L4=[85615]Project Closed.
+
+[Opened Files]
+1=oled.c
+t1=1
+Count=1
+[oled.c]
+Type=4
+[Units]
+Count=1
+1=oled (main)
+
+[defines]
+buildcount=1
