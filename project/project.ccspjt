@@ -37,7 +37,7 @@ D1_L14=[41169]Started Editing.
 D1_L15=[41765]Stopped Editing.
 D1_L16=[41778]Started Editing.
 D1_L17=[42648]Stopped Editing.
-TotalEdit=113
+TotalEdit=302
 TotalDebug=0
 D1_E=113
 D1_D=0
@@ -55,7 +55,7 @@ D1_L28=[62132]Started Editing.
 D1_L29=[62552]Stopped Editing.
 D1_L30=[64293]Project Closed.
 D2=24-11-2021
-D2_L=21
+D2_L=36
 D2_L1=[3308]Project Opened.
 D2_L2=[3327]Started Editing.
 D2_L3=[3826]Stopped Editing.
@@ -77,20 +77,37 @@ D2_L18=[12392]Started Editing.
 D2_L19=[13139]Stopped Editing.
 D2_L20=[13830]Started Editing.
 D2_L21=[14328]Stopped Editing.
+D2_L22=[15217]Started Editing.
+D2_L23=[15757]Stopped Editing.
+D2_L24=[15821]Started Editing.
+D2_L25=[16908]Stopped Editing.
+D2_L26=[16924]Started Editing.
+D2_L27=[17613]Stopped Editing.
+D2_L28=[17658]Started Editing.
+D2_L29=[19425]Stopped Editing.
+D2_L30=[21414]Started Editing.
+D2_L31=[22443]Stopped Editing.
+D2_L32=[22576]Started Editing.
+D2_L33=[24812]Stopped Editing.
+D2_L34=[24896]Started Editing.
+D2_L35=[25920]Stopped Editing.
+D2_E=189
+D2_D=0
+D2_L36=[26402]Project Closed.
 
 [Opened Files]
 1=project.c
-t1=85
-Count=3
-2=..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
-t2=205
+t1=137
+Count=2
+2=..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\math.h
+t2=1319
 3=..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\SSD1306.c
 t3=82
 [project.c]
 Type=4
 
 [defines]
-buildcount=57
+buildcount=85
 [Units]
 Count=1
 1=project (main)

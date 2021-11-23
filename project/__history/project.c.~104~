@@ -137,7 +137,7 @@ void main() {
     
     distance = (duration * 50)/58;     //distance (cm)
     
-    if(distance < 160 && distance > 3)
+    if(distance < 160)
     {
       inrange = distance / 10;
       remain = distance % 10;
@@ -146,22 +146,22 @@ void main() {
       if(rad < 0)
       {
          rad *= -1;
-         leftside = 0;
-      } else {
          leftside = 1;
+      } else {
+         leftside = 0;
       }
       
       radf = pi / 180 * rad;
       
-      posx = sin(radf) * inrange / 2;
-      posy = cos(radf) * inrange / 2;
+      posx = cos(radf) * inrange / 2;
+      posy = sin(radf) * inrange / 2;
       
       if(leftside == 1) {
          oledx = 11 - posx;
       } else {
          oledx = 11 + posx;
       }
-      oledy = 8 - posy;
+      oledy = posy - 8;
       
       SSD1306_GotoXY(1, 1);
       printf(SSD1306_PutC, "%02u%d", inrange, remain);
@@ -171,11 +171,6 @@ void main() {
       
       SSD1306_GotoXY(oledx, oledy);
       SSD1306_PutC("o");
-      
-      
-      
-      SSD1306_GotoXY(10, 1);
-      printf(SSD1306_PutC, "%02u %02u %02u %02u", oledx, oledy, posx, posy);
       
     } else {
       inrange = 0;

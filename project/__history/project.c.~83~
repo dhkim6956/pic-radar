@@ -1,5 +1,5 @@
 #include <project.h>
-#include <math.h>
+#include <stdlib.h>
 
 // Interfacing PIC16F877A with SSD1306 OLED display (128x64 Pixel)
 // http://simple-circuit.com/
@@ -28,17 +28,12 @@ int clear = 0;
 int16 duration = 0;
 int16 distance = 0;
 unsigned int8 inrange = 0;
-unsigned int8 remain = 0;
 
 int measure = 0;
 
-signed int rad = 0;
-float radf = 0;
-unsigned int8 posx = 0, posy = 0;
-unsigned int8 oledx = 0, oledy = 0;
+unsigned int8 rad = 0, posx = 0, posy = 0;
 
-int leftside = 0;
-
+float pi = 3.14159;
 
 
 #INT_TIMER0                   //0.05ms timer interrupt
@@ -135,53 +130,21 @@ void main() {
     while(input(PIN_A1));
     measure = 0;
     
-    distance = (duration * 50)/58;     //distance (cm)
+    distance = (duration * 50)/58;
     
-    if(distance < 160 && distance > 3)
+    if(distance < 100)
     {
-      inrange = distance / 10;
-      remain = distance % 10;
+      inrange = distance/10;
       
-      rad = (angle - 27)*6;
-      if(rad < 0)
-      {
-         rad *= -1;
-         leftside = 0;
-      } else {
-         leftside = 1;
-      }
+      rad = 90 - abs(angle - 27)*6;
       
-      radf = pi / 180 * rad;
-      
-      posx = sin(radf) * inrange / 2;
-      posy = cos(radf) * inrange / 2;
-      
-      if(leftside == 1) {
-         oledx = 11 - posx;
-      } else {
-         oledx = 11 + posx;
-      }
-      oledy = 8 - posy;
-      
-      SSD1306_GotoXY(1, 1);
-      printf(SSD1306_PutC, "%02u%d", inrange, remain);
-    
-      SSD1306_GotoXY(1, 2);
-      SSD1306_PutC("(cm)");
-      
-      SSD1306_GotoXY(oledx, oledy);
-      SSD1306_PutC("o");
-      
-      
-      
-      SSD1306_GotoXY(10, 1);
-      printf(SSD1306_PutC, "%02u %02u %02u %02u", oledx, oledy, posx, posy);
       
     } else {
       inrange = 0;
     }
     
-    
+    SSD1306_GotoXY(1, 1);
+    printf(SSD1306_PutC, "%03u", rad);
   }
 
 }

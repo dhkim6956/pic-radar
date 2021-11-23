@@ -1,5 +1,5 @@
 ÀÄproject
-   ÃÄMAIN  0/171  Ram=2
+   ÃÄMAIN  1/581  Ram=4
    ³  ÃÄ@cinit1  (Inline)  Ram=0
    ³  ÃÄ@cinit2  (Inline)  Ram=0
    ³  ÃÄ@delay_ms1  0/20  Ram=1
@@ -82,7 +82,7 @@
    ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
    ³  ³  ÀÄ@I2C_WRITEU_129  0/16  Ram=1
    ³  ÃÄSSD1306_GotoXY  0/13  Ram=2
-   ³  ÃÄ@PSTRINGC7_771  0/88  Ram=4
+   ³  ÃÄ@PSTRINGC7_913  0/86  Ram=4
    ³  ³  ÃÄSSD1306_PutC  0/123  Ram=5
    ³  ³  ³  ÃÄssd1306_command  0/21  Ram=2
    ³  ³  ³  ³  ÀÄ*
@@ -101,9 +101,9 @@
    ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
    ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
    ³  ³  ³  ÃÄ@MUL88  0/37  Ram=2
-   ³  ³  ³  ÃÄ@const735  0/262  Ram=0
+   ³  ³  ³  ÃÄ@const877  0/262  Ram=0
    ³  ³  ³  ÃÄ@MUL88  0/37  Ram=2
-   ³  ³  ³  ÃÄ@const738  0/227  Ram=0
+   ³  ³  ³  ÃÄ@const880  0/227  Ram=0
    ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
    ³  ³  ³  ÀÄ@DIV88  0/21  Ram=3
    ³  ³  ÀÄSSD1306_PutC  0/123  Ram=5
@@ -111,17 +111,84 @@
    ³  ÃÄ@delay_ms1  0/20  Ram=1
    ³  ÃÄSSD1306_ClearDisplay  0/45  Ram=2
    ³  ³  ÀÄ*
+   ³  ÃÄSSD1306_ClearDisplay  0/45  Ram=2
+   ³  ³  ÀÄ*
    ³  ÃÄ@MUL1616  0/23  Ram=5
    ³  ÃÄ@DIV1616  0/37  Ram=5
    ³  ÃÄ@DIV1616  0/37  Ram=5
+   ³  ÃÄ@DIV1616  0/37  Ram=5
+   ³  ÃÄ@MUL88  0/37  Ram=2
+   ³  ÃÄ@MUL88  0/37  Ram=2
+   ³  ÃÄ@SITOF  0/39  Ram=2
+   ³  ÃÄ@MULFF  0/119  Ram=13
+   ³  ÃÄsin  0/48  Ram=8
+   ³  ³  ÃÄ@ADDFF  0/326  Ram=16
+   ³  ³  ÀÄcos  1/660  Ram=64
+   ³  ³     ÃÄ@FLT  (Inline)  Ram=10
+   ³  ³     ÃÄ@MULFF  0/119  Ram=13
+   ³  ³     ÃÄ@SFTOI  0/33  Ram=4
+   ³  ³     ÃÄ@MULFF  0/119  Ram=13
+   ³  ³     ÃÄ@ITOF  0/31  Ram=2
+   ³  ³     ÃÄ@ADDFF  0/326  Ram=16
+   ³  ³     ÃÄ@MULFF  0/119  Ram=13
+   ³  ³     ÃÄ@ADDFF  0/326  Ram=16
+   ³  ³     ÃÄ@MULFF  0/119  Ram=13
+   ³  ³     ÃÄ@ADDFF  0/326  Ram=16
+   ³  ³     ÃÄ@MULFF  0/119  Ram=13
+   ³  ³     ÃÄ@MULFF  0/119  Ram=13
+   ³  ³     ÃÄ@MULFF  0/119  Ram=13
+   ³  ³     ÃÄ@MULFF  0/119  Ram=13
+   ³  ³     ÀÄ@ADDFF  0/326  Ram=16
+   ³  ÃÄ@ITOF  0/31  Ram=2
+   ³  ÃÄ@MULFF  0/119  Ram=13
+   ³  ÃÄ@DIVFF  0/202  Ram=14
+   ³  ÃÄ@SFTOI  0/33  Ram=4
+   ³  ÃÄcos  1/660  Ram=64
+   ³  ³  ÀÄ*
+   ³  ÃÄ@ITOF  0/31  Ram=2
+   ³  ÃÄ@MULFF  0/119  Ram=13
+   ³  ÃÄ@DIVFF  0/202  Ram=14
+   ³  ÃÄ@SFTOI  0/33  Ram=4
    ³  ÃÄSSD1306_GotoXY  0/13  Ram=2
-   ³  ÀÄ@PRINTF_U_771  0/55  Ram=2
-   ³     ÃÄ@DIV88  0/21  Ram=3
-   ³     ÃÄSSD1306_PutC  0/123  Ram=5
-   ³     ³  ÀÄ*
-   ³     ÃÄ@DIV88  0/21  Ram=3
-   ³     ÃÄSSD1306_PutC  0/123  Ram=5
-   ³     ³  ÀÄ*
-   ³     ÀÄSSD1306_PutC  0/123  Ram=5
-   ³        ÀÄ*
-   ÀÄtimer0_ovf  0/89  Ram=0
+   ³  ÃÄ@PRINTF_U_913  1/63  Ram=2
+   ³  ³  ÃÄ@DIV88  0/21  Ram=3
+   ³  ³  ÃÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/21  Ram=3
+   ³  ³  ÃÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄSSD1306_PutC  0/123  Ram=5
+   ³  ³     ÀÄ*
+   ³  ÃÄ@PRINTF_D_913  1/101  Ram=6
+   ³  ³  ÃÄ@DIV88  0/21  Ram=3
+   ³  ³  ÃÄ@DIV88  0/21  Ram=3
+   ³  ³  ÃÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄSSD1306_PutC  0/123  Ram=5
+   ³  ³     ÀÄ*
+   ³  ÃÄSSD1306_GotoXY  0/13  Ram=2
+   ³  ÃÄ@PSTRINGC7_913  0/86  Ram=4
+   ³  ³  ÀÄ*
+   ³  ÃÄSSD1306_GotoXY  0/13  Ram=2
+   ³  ÃÄ@PSTRINGC7_913  0/86  Ram=4
+   ³  ³  ÀÄ*
+   ³  ÃÄSSD1306_GotoXY  0/13  Ram=2
+   ³  ÃÄ@PRINTF_U_913  1/63  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PRINTF_U_913  1/63  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PRINTF_U_913  1/63  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ÀÄ*
+   ³  ÀÄ@PRINTF_U_913  1/63  Ram=2
+   ³     ÀÄ*
+   ÀÄtimer0_ovf  0/91  Ram=0

@@ -1,9 +1,9 @@
-D G "__PCM__" 0 133 ""5.105Pd""
-D G "__DEVICE__" 0 133 "877"
-D G "__DATE__" 0 133 ""24-Nov-21""
-D G "__TIME__" 0 133 ""03:54:14""
-D G "_UNICODE" 0 133 ""?""
-D G "__EVAL" 0 133 ""?"" "Standard Header file for the PIC16F877A device ////////////////"
+D G "__PCM__" 0 190 ""5.105Pd""
+D G "__DEVICE__" 0 190 "877"
+D G "__DATE__" 0 190 ""24-Nov-21""
+D G "__TIME__" 0 190 ""07:07:13""
+D G "_UNICODE" 0 190 ""?""
+D G "__EVAL" 0 190 ""?"" "Standard Header file for the PIC16F877A device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 F N "set_tris_a" 2 37 ""
 V L "value" 2 37 "int8" `55 
@@ -1166,226 +1166,410 @@ D G "INT_BUSCOL" 2 702 "0x008D08"
 D G "INT_EEPROM" 2 703 "0x008D10"
 D G "INT_TIMER0" 2 704 "0x000B20"
 D G "INT_COMP" 2 705 "0x008D40"
-D G "SSD1306_RST" 0 6 "PIN_D4"
-C L "jump_to_isr" 0 3 1 "FUNCTION"
-C L "jump_to_isr" 3 1 3 "FUNCTION"
-D G "_STDINT" 4 19 ""
-C L "jump_to_isr" 4 2 1 "FUNCTION"
-T G "int8_t" 4 23 "sint8" `707 
-T G "uint8_t" 4 24 "int8" `708 
-T G "int16_t" 4 25 "sint16" `709 
-T G "uint16_t" 4 26 "int16" `710 
-T G "int32_t" 4 27 "sint32" `711 
-T G "uint32_t" 4 28 "int32" `712 
-D G "INT8_MAX" 4 37 " (127)"
-D G "INT8_MIN" 4 38 " (-128)"
-D G "UINT8_MAX" 4 39 " (255)"
-D G "INT16_MAX" 4 41 " (32767)"
-D G "INT16_MIN" 4 42 " (-32768)"
-D G "UINT16_MAX" 4 43 " (65535)"
-D G "INT32_MAX" 4 45 " (2147483647)"
-D G "INT32_MIN" 4 46 " (-2147483648)"
-D G "UINT32_MAX" 4 47 " (4294967295)"
-C L "jump_to_isr" 4 2 1 "FUNCTION"
-T G "int_least8_t" 4 61 "sint8" `713 
-T G "uint_least8_t" 4 62 "int8" `714 
-T G "int_least16_t" 4 63 "sint16" `715 
-T G "uint_least16_t" 4 64 "int16" `716 
-T G "int_least32_t" 4 65 "sint32" `717 
-T G "uint_least32_t" 4 66 "int32" `718 
-D G "INT_LEAST8_MAX" 4 75 " (127)"
-D G "INT_LEAST8_MIN" 4 76 " (-128)"
-D G "UINT_LEAST8_MAX" 4 77 " (255)"
-D G "INT_LEAST16_MAX" 4 79 " (32767)"
-D G "INT_LEAST16_MIN" 4 80 " (-32768)"
-D G "UINT_LEAST16_MAX" 4 81 " (65535)"
-D G "INT_LEAST32_MAX" 4 83 " (2147483647)"
-D G "INT_LEAST32_MIN" 4 84 " (-2147483648)"
-D G "UINT_LEAST32_MAX" 4 85 " (4294967295)"
-C L "jump_to_isr" 4 2 1 "FUNCTION"
-T G "int_fast8_t" 4 112 "sint8" `719 
-T G "uint_fast8_t" 4 113 "int8" `720 
-D G "INT_FAST8_MAX" 4 114 " (127)"
-D G "INT_FAST8_MIN" 4 115 " (-128)"
-D G "UINT_FAST8_MAX" 4 116 " (255)"
-T G "int_fast16_t" 4 117 "sint16" `721 
-T G "uint_fast16_t" 4 118 "int16" `722 
-T G "int_fast32_t" 4 121 "sint32" `723 
-T G "uint_fast32_t" 4 122 "int32" `724 
-D G "INT_FAST16_MAX" 4 124 " (32767)"
-D G "INT_FAST16_MIN" 4 125 " (-32768)"
-D G "UINT_FAST16_MAX" 4 126 " (65535)"
-D G "INT_FAST32_MAX" 4 128 " (2147483647)"
-D G "INT_FAST32_MIN" 4 129 " (-2147483648)"
-D G "UINT_FAST32_MAX" 4 130 " (4294967295)"
-C L "jump_to_isr" 4 2 1 "FUNCTION"
-T G "uintptr_t" 4 148 "int16" `725 
-T G "intptr_t" 4 149 "sint16" `726 
-D G "INT8_C" 4 152 "(val) ((int8_t)val)"
-D G "UINT8_C" 4 153 "(val) ((uint8_t)val)"
-D G "INT16_C" 4 154 "(val) ((int16_t)val)"
-D G "UINT16_C" 4 155 "(val) ((uint16_t)val)"
-D G "INT32_C" 4 156 "(val) ((int32_t)val)"
-D G "UINT32_C" 4 157 "(val) ((uint32_t)val)"
-C L "jump_to_isr" 4 2 3 "FUNCTION"
-T G "intmax_t" 4 181 "sint32" `727 
-T G "uintmax_t" 4 182 "int32" `728 
-D G "INTMAXN_MAX" 4 184 " (2147483647)"
-D G "INTMAXN_MIN" 4 185 " (-2147483648)"
-D G "UINTMAXN_MAX" 4 186 " (4294967295)"
-D G "INTMAX_C" 4 188 "(value) ((signed int32)val)"
-D G "UINTMAX_C" 4 189 "(value) ((unsigned int32)val)"
-D G "SSD1306_I2C_ADDRESS" 3 16 "0x7A"
-D G "SSD1306_128_64" 3 19 ""
-D G "SSD1306_LCDWIDTH" 3 26 "128"
-D G "SSD1306_LCDHEIGHT" 3 27 "64"
-D G "SSD1306_SETCONTRAST" 3 38 "0x81"
-D G "SSD1306_DISPLAYALLON_RESUME" 3 39 "0xA4"
-D G "SSD1306_DISPLAYALLON" 3 40 "0xA5"
-D G "SSD1306_NORMALDISPLAY" 3 41 "0xA6"
-D G "SSD1306_INVERTDISPLAY_" 3 42 "0xA7"
-D G "SSD1306_DISPLAYOFF" 3 43 "0xAE"
-D G "SSD1306_DISPLAYON" 3 44 "0xAF"
-D G "SSD1306_SETDISPLAYOFFSET" 3 45 "0xD3"
-D G "SSD1306_SETCOMPINS" 3 46 "0xDA"
-D G "SSD1306_SETVCOMDETECT" 3 47 "0xDB"
-D G "SSD1306_SETDISPLAYCLOCKDIV" 3 48 "0xD5"
-D G "SSD1306_SETPRECHARGE" 3 49 "0xD9"
-D G "SSD1306_SETMULTIPLEX" 3 50 "0xA8"
-D G "SSD1306_SETLOWCOLUMN" 3 51 "0x00"
-D G "SSD1306_SETHIGHCOLUMN" 3 52 "0x10"
-D G "SSD1306_SETSTARTLINE" 3 53 "0x40"
-D G "SSD1306_MEMORYMODE" 3 54 "0x20"
-D G "SSD1306_COLUMNADDR" 3 55 "0x21"
-D G "SSD1306_PAGEADDR" 3 56 "0x22"
-D G "SSD1306_COMSCANINC" 3 57 "0xC0"
-D G "SSD1306_COMSCANDEC" 3 58 "0xC8"
-D G "SSD1306_SEGREMAP" 3 59 "0xA0"
-D G "SSD1306_CHARGEPUMP" 3 60 "0x8D"
-D G "SSD1306_EXTERNALVCC" 3 61 "0x01"
-D G "SSD1306_SWITCHCAPVCC" 3 62 "0x02"
-D G "SSD1306_ACTIVATE_SCROLL" 3 65 "0x2F"
-D G "SSD1306_DEACTIVATE_SCROLL" 3 66 "0x2E"
-D G "SSD1306_SET_VERTICAL_SCROLL_AREA" 3 67 "0xA3"
-D G "SSD1306_RIGHT_HORIZONTAL_SCROLL" 3 68 "0x26"
-D G "SSD1306_LEFT_HORIZONTAL_SCROLL" 3 69 "0x27"
-D G "SSD1306_VERTICAL_AND_RIGHT_HORIZONTAL_SCROLL" 3 70 "0x29"
-D G "SSD1306_VERTICAL_AND_LEFT_HORIZONTAL_SCROLL" 3 71 "0x2A"
-V G "_i2caddr" 3 74 "uint8_t" `729 
-V G "_vccstate" 3 74 "uint8_t" `730 
-V G "x_pos" 3 74 "uint8_t" `731 
-V G "y_pos" 3 74 "uint8_t" `732 
-C L "jump_to_isr" 3 14 1 "FUNCTION"
-V G "wrap" 3 78 "int1" `733 
-V G "Font" 3 80 "[1]" `735 
-V G "Font2" 3 133 "[1]" `738 
-F N "ssd1306_command" 3 181 ""
-V L "c" 3 181 "uint8_t" `741 
-F G "ssd1306_command" 3 181 "void(uint8_t c)" `740 
-V L "control" 3 182 "uint8_t" `742 
-C L "ssd1306_command" 3 14 1 "FUNCTION"
-F N "SSD1306_Init" 3 190 ""
-V L "vccstate" 3 190 "uint8_t" `744 
-V L "i2caddr" 3 190 "uint8_t" `745 
-F G "SSD1306_Init" 3 190 "void(uint8_t=2 vccstate,uint8_t=122 i2caddr)" `743 
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-C L "SSD1306_Init" 3 14 1 "FUNCTION"
-F N "SSD1306_StartScrollRight" 3 261 ""
-V L "start" 3 261 "uint8_t" `749 
-V L "stop" 3 261 "uint8_t" `750 
-F G "SSD1306_StartScrollRight" 3 261 "void(uint8_t start,uint8_t stop)" `748 
-C L "SSD1306_StartScrollRight" 3 14 1 "FUNCTION"
-C L "SSD1306_StartScrollRight" 3 14 1 "FUNCTION"
-F N "SSD1306_StartScrollLeft" 3 272 ""
-V L "start" 3 272 "uint8_t" `752 
-V L "stop" 3 272 "uint8_t" `753 
-F G "SSD1306_StartScrollLeft" 3 272 "void(uint8_t start,uint8_t stop)" `751 
-F N "SSD1306_StartScrollDiagRight" 3 283 ""
-V L "start" 3 283 "uint8_t" `755 
-V L "stop" 3 283 "uint8_t" `756 
-F G "SSD1306_StartScrollDiagRight" 3 283 "void(uint8_t start,uint8_t stop)" `754 
-F N "SSD1306_StartScrollDiagLeft" 3 296 ""
-V L "start" 3 296 "uint8_t" `758 
-V L "stop" 3 296 "uint8_t" `759 
-F G "SSD1306_StartScrollDiagLeft" 3 296 "void(uint8_t start,uint8_t stop)" `757 
-F N "SSD1306_StopScroll" 3 309 ""
-F G "SSD1306_StopScroll" 3 309 "void()" `760 
-F N "SSD1306_Dim" 3 313 ""
-V L "dim" 3 313 "int8" `762 
-F G "SSD1306_Dim" 3 313 "void(int8 dim)" `761 
-V L "contrast" 3 314 "uint8_t" `763 
-C L "SSD1306_Dim" 3 14 1 "FUNCTION"
-C L "SSD1306_Dim" 3 14 2 "FUNCTION"
-F N "SSD1306_SetTextWrap" 3 329 ""
-V L "w" 3 329 "int8" `765 
-F G "SSD1306_SetTextWrap" 3 329 "void(int8 w)" `764 
-F N "SSD1306_InvertDisplay" 3 333 ""
-V L "i" 3 333 "int8" `767 
-F G "SSD1306_InvertDisplay" 3 333 "void(int8 i)" `766 
-F N "SSD1306_GotoXY" 3 340 ""
-V L "x" 3 340 "uint8_t" `769 
-V L "y" 3 340 "uint8_t" `770 
-F G "SSD1306_GotoXY" 3 340 "void(uint8_t x,uint8_t y)" `768 
-F N "SSD1306_PutC" 3 347 ""
-V L "c" 3 347 "uint8_t" `772 
-F G "SSD1306_PutC" 3 347 "void(uint8_t c)" `771 
-V L "font_c" 3 348 "uint8_t" `773 
-C L "SSD1306_PutC" 3 14 1 "FUNCTION"
-C L "SSD1306_PutC" 3 14 1 "FUNCTION"
-C L "SSD1306_PutC" 3 14 1 "FUNCTION"
-V L "i" 3 363 "uint8_t" `777 
-F N "SSD1306_PutCustomC" 3 379 ""
-V L "c" 3 379 "*int8" `782 
-F G "SSD1306_PutCustomC" 3 379 "void(*int8 c)" `781 
-V L "line" 3 380 "uint8_t" `783 
-C L "SSD1306_PutCustomC" 3 14 1 "FUNCTION"
-C L "SSD1306_PutCustomC" 3 14 1 "FUNCTION"
-C L "SSD1306_PutCustomC" 3 14 1 "FUNCTION"
-V L "i" 3 393 "uint8_t" `784 
-F N "SSD1306_ClearDisplay" 3 405 ""
-F G "SSD1306_ClearDisplay" 3 405 "void()" `785 
-C L "SSD1306_ClearDisplay" 3 14 1 "FUNCTION"
-C L "SSD1306_ClearDisplay" 3 14 1 "FUNCTION"
-C L "SSD1306_ClearDisplay" 3 14 1 "FUNCTION"
-C L "SSD1306_ClearDisplay" 3 14 1 "FUNCTION"
-V L "i" 3 429 "uint16_t" `786 
-F N "SSD1306_FillScreen" 3 436 ""
-F G "SSD1306_FillScreen" 3 436 "void()" `787 
-C L "SSD1306_FillScreen" 3 14 1 "FUNCTION"
-C L "SSD1306_FillScreen" 3 14 1 "FUNCTION"
-C L "SSD1306_FillScreen" 3 14 1 "FUNCTION"
-C L "SSD1306_FillScreen" 3 14 1 "FUNCTION"
-V L "i" 3 460 "uint16_t" `788 
-V G "loop0" 0 19 "int16" `791 
-V G "loop1" 0 20 "int16" `792 
-V G "rdir" 0 21 "int8" `793 
-V G "angle" 0 23 "int8" `794 
-V G "duration" 0 25 "int16" `795 
-V G "distance" 0 26 "int16" `796 
-V G "disp" 0 27 "int8" `797 
-V G "measure" 0 29 "int8" `798 
-F N "timer0_ovf" 0 33 ""
-F G "timer0_ovf" 0 34 "void()" `799 
-F N "MAIN" 0 80 ""
-F G "MAIN" 0 80 "void()" `800 
-C L "MAIN" 0 90 1 "FUNCTION"
-C L "MAIN" 0 90 1 "FUNCTION"
+D G "MATH_H" 3 30 ""
+D G "PI" 3 35 "3.1415926535897932"
+D G "SQRT2" 3 38 "1.4142135623730950"
+C L "jump_to_isr" 3 2 3 "FUNCTION"
+F N "CEIL_FLOOR" 3 45 ""
+V L "x" 3 45 "float" `701 
+V L "n" 3 45 "int8" `702 
+F G "CEIL_FLOOR" 3 46 "float(float x,int8 n)" `700 
+V L "y" 3 47 "float" `703 
+V L "res" 3 47 "float" `704 
+V L "l" 3 48 "int16" `705 
+V L "s" 3 49 "int1" `706 
+C L "floor" 3 2 5 "FUNCTION"
+F N "floor" 3 207 ""
+V L "x" 3 207 "float" `721 
+F G "floor" 3 208 "float(float x)" `720 
+C L "ceil" 3 2 5 "FUNCTION"
+F N "ceil" 3 233 ""
+V L "x" 3 233 "float" `723 
+F G "ceil" 3 234 "float(float x)" `722 
+D G "fabs" 3 259 "abs"
+C L "fmod" 3 2 6 "FUNCTION"
+F N "fmod" 3 271 ""
+V L "x" 3 271 "float" `725 
+V L "y" 3 271 "float" `726 
+F G "fmod" 3 272 "float(float x,float y)" `724 
+V L "i" 3 273 "float" `727 
+D G "LN2" 3 334 "0.6931471805599453"
+D G "LN2_INV" 3 335 "1.4426950408889634073"
+V G "pe" 3 337 "[6]" `732 
+F N "exp" 3 341 ""
+V L "x" 3 341 "float" `735 
+F G "exp" 3 342 "float(float x)" `734 
+V L "y" 3 343 "float" `736 
+V L "res" 3 343 "float" `737 
+V L "r" 3 343 "float" `738 
+V L "n" 3 347 "sint8" `739 
+V L "s" 3 348 "int1" `740 
+C L "exp" 3 2 1 "FUNCTION"
+V G "pl" 3 525 "[4]" `744 
+V G "ql" 3 526 "[4]" `747 
+C L "log" 3 2 3 "FUNCTION"
+F N "log" 3 534 ""
+V L "x" 3 534 "float" `750 
+F G "log" 3 535 "float(float x)" `749 
+V L "y" 3 536 "float" `751 
+V L "res" 3 536 "float" `752 
+V L "r" 3 536 "float" `753 
+V L "y2" 3 536 "float" `754 
+V L "n" 3 540 "sint8" `755 
+C L "log" 3 2 1 "FUNCTION"
+D G "LN10" 3 758 "2.3025850929940456"
+D G "LN10_INV" 3 759 "0.4342944819032518276"
+C L "log10" 3 2 3 "FUNCTION"
+F N "log10" 3 767 ""
+V L "x" 3 767 "float" `757 
+F G "log10" 3 768 "float(float x)" `756 
+V L "r" 3 769 "float" `758 
+C L "modf" 3 2 8 "FUNCTION"
+F N "modf" 3 808 ""
+V L "value" 3 808 "float" `760 
+V L "iptr" 3 808 "*float" `761 
+F G "modf" 3 809 "float(float value,*float iptr)" `759 
+C L "pwr" 3 2 6 "FUNCTION"
+F N "pwr" 3 836 ""
+V L "x" 3 836 "float" `763 
+V L "y" 3 836 "float" `764 
+F G "pwr" 3 837 "float(float x,float y)" `762 
+C L "pow" 3 2 7 "FUNCTION"
+F N "pow" 3 899 ""
+V L "x" 3 899 "float" `766 
+V L "y" 3 899 "float" `767 
+F G "pow" 3 900 "float(float x,float y)" `765 
+C L "sqrt" 3 2 5 "FUNCTION"
+F N "sqrt" 3 960 ""
+V L "x" 3 960 "float" `769 
+F G "sqrt" 3 961 "float(float x)" `768 
+V L "y" 3 962 "float" `770 
+V L "res" 3 962 "float" `771 
+V L "p" 3 967 "*int8" `772 
+D G "PI_DIV_BY_TWO_INV" 3 1156 "0.63661977236758134"
+D G "PI_DIV_BY_TWO" 3 1160 "1.5707963267948966"
+D G "TWOBYPI" 3 1164 "0.6366197723675813"
+C L "cos" 3 2 3 "FUNCTION"
+F N "cos" 3 1172 ""
+V L "x" 3 1172 "float" `774 
+F G "cos" 3 1173 "float(float x)" `773 
+V L "y" 3 1174 "float" `775 
+V L "t" 3 1174 "float" `776 
+V L "t2" 3 1174 "float" `777 
+V L "quad" 3 1175 "int8" `778 
+V L "i" 3 1175 "int8" `779 
+V L "frac" 3 1176 "float" `780 
+V L "p" 3 1177 "float[5]" `781  "by the series definition for cosine"
+C L "cos" 3 2 1 "FUNCTION"
+C L "cos" 3 2 2 "FUNCTION"
+C L "cos" 3 2 1 "FUNCTION"
+C L "cos" 3 2 1 "FUNCTION"
+C L "cos" 3 2 1 "FUNCTION"
+C L "cos" 3 2 1 "FUNCTION"
+C L "cos" 3 2 1 "FUNCTION"
+C L "cos" 3 2 1 "FUNCTION"
+C L "sin" 3 2 5 "FUNCTION"
+F N "sin" 3 1311 ""
+V L "x" 3 1311 "float" `783 
+F G "sin" 3 1312 "float(float x)" `782 
+C L "tan" 3 2 5 "FUNCTION"
+F N "tan" 3 1337 ""
+V L "x" 3 1337 "float" `785 
+F G "tan" 3 1338 "float(float x)" `784 
+V L "c" 3 1339 "float" `786 
+V L "s" 3 1339 "float" `787 
+V G "pas" 3 1377 "[3]" `789 
+V G "qas" 3 1378 "[3]" `792 
+F N "ASIN_COS" 3 1380 ""
+V L "x" 3 1380 "float" `795 
+V L "n" 3 1380 "int8" `796 
+F G "ASIN_COS" 3 1381 "float(float x,int8 n)" `794 
+V L "y" 3 1382 "float" `797 
+V L "res" 3 1382 "float" `798 
+V L "r" 3 1382 "float" `799 
+V L "y2" 3 1382 "float" `800 
+V L "s" 3 1383 "int1" `801 
+C L "ASIN_COS" 3 2 1 "FUNCTION"
+C L "ASIN_COS" 3 2 1 "FUNCTION"
+C L "asin" 3 2 5 "FUNCTION"
+F N "asin" 3 1538 ""
+V L "x" 3 1538 "float" `803 
+F G "asin" 3 1539 "float(float x)" `802 
+V L "r" 3 1540 "float" `804 
+C L "acos" 3 2 5 "FUNCTION"
+F N "acos" 3 1572 ""
+V L "x" 3 1572 "float" `806 
+F G "acos" 3 1573 "float(float x)" `805 
+V L "r" 3 1574 "float" `807 
+V G "pat" 3 1600 "[4]" `809 
+V G "qat" 3 1601 "[4]" `812 
+C L "atan" 3 2 3 "FUNCTION"
+F N "atan" 3 1609 ""
+V L "x" 3 1609 "float" `815 
+F G "atan" 3 1610 "float(float x)" `814 
+V L "y" 3 1611 "float" `816 
+V L "res" 3 1611 "float" `817 
+V L "r" 3 1611 "float" `818 
+V L "s" 3 1612 "int1" `819 
+V L "flag" 3 1612 "int1" `820 
+C L "atan" 3 2 1 "FUNCTION"
+C L "atan2" 3 2 7 "FUNCTION"
+F N "atan2" 3 1752 ""
+V L "y" 3 1752 "float" `822 
+V L "x" 3 1752 "float" `823 
+F G "atan2" 3 1753 "float(float y,float x)" `821 
+V L "z" 3 1754 "float" `824 
+V L "sign" 3 1755 "int1" `825 
+V L "quad" 3 1756 "int8" `826 
+C L "atan2" 3 2 1 "FUNCTION"
+C L "atan2" 3 2 1 "FUNCTION"
+C L "cosh" 3 2 7 "FUNCTION"
+F N "cosh" 3 1974 ""
+V L "x" 3 1974 "float" `829 
+F G "cosh" 3 1975 "float(float x)" `828 
+C L "sinh" 3 2 6 "FUNCTION"
+F N "sinh" 3 2001 ""
+V L "x" 3 2001 "float" `831 
+F G "sinh" 3 2002 "float(float x)" `830 
+C L "tanh" 3 2 6 "FUNCTION"
+F N "tanh" 3 2031 ""
+V L "x" 3 2031 "float" `833 
+F G "tanh" 3 2032 "float(float x)" `832 
+D G "LOG2" 3 2061 ".30102999566398119521"
+D G "LOG2_INV" 3 2062 "3.32192809488736234787"
+F N "frexp" 3 2063 ""
+V L "x" 3 2063 "float" `835 
+V L "exp" 3 2063 "*sint8" `836 
+F G "frexp" 3 2064 "float(float x,*sint8 exp)" `834 
+V L "res" 3 2065 "float" `837 
+V L "sign" 3 2066 "int1" `838 
+C L "ldexp" 3 2 6 "FUNCTION"
+F N "ldexp" 3 2208 ""
+V L "value" 3 2208 "float" `840 
+V L "exp" 3 2208 "sint8" `841 
+F G "ldexp" 3 2209 "float(float value,sint8 exp)" `839 
+D G "SSD1306_RST" 0 7 "PIN_D4"
+D G "_STDINT" 5 19 ""
+T G "int8_t" 5 23 "sint8" `849 
+T G "uint8_t" 5 24 "int8" `850 
+T G "int16_t" 5 25 "sint16" `851 
+T G "uint16_t" 5 26 "int16" `852 
+T G "int32_t" 5 27 "sint32" `853 
+T G "uint32_t" 5 28 "int32" `854 
+D G "INT8_MAX" 5 37 " (127)"
+D G "INT8_MIN" 5 38 " (-128)"
+D G "UINT8_MAX" 5 39 " (255)"
+D G "INT16_MAX" 5 41 " (32767)"
+D G "INT16_MIN" 5 42 " (-32768)"
+D G "UINT16_MAX" 5 43 " (65535)"
+D G "INT32_MAX" 5 45 " (2147483647)"
+D G "INT32_MIN" 5 46 " (-2147483648)"
+D G "UINT32_MAX" 5 47 " (4294967295)"
+T G "int_least8_t" 5 61 "sint8" `855 
+T G "uint_least8_t" 5 62 "int8" `856 
+T G "int_least16_t" 5 63 "sint16" `857 
+T G "uint_least16_t" 5 64 "int16" `858 
+T G "int_least32_t" 5 65 "sint32" `859 
+T G "uint_least32_t" 5 66 "int32" `860 
+D G "INT_LEAST8_MAX" 5 75 " (127)"
+D G "INT_LEAST8_MIN" 5 76 " (-128)"
+D G "UINT_LEAST8_MAX" 5 77 " (255)"
+D G "INT_LEAST16_MAX" 5 79 " (32767)"
+D G "INT_LEAST16_MIN" 5 80 " (-32768)"
+D G "UINT_LEAST16_MAX" 5 81 " (65535)"
+D G "INT_LEAST32_MAX" 5 83 " (2147483647)"
+D G "INT_LEAST32_MIN" 5 84 " (-2147483648)"
+D G "UINT_LEAST32_MAX" 5 85 " (4294967295)"
+T G "int_fast8_t" 5 112 "sint8" `861 
+T G "uint_fast8_t" 5 113 "int8" `862 
+D G "INT_FAST8_MAX" 5 114 " (127)"
+D G "INT_FAST8_MIN" 5 115 " (-128)"
+D G "UINT_FAST8_MAX" 5 116 " (255)"
+T G "int_fast16_t" 5 117 "sint16" `863 
+T G "uint_fast16_t" 5 118 "int16" `864 
+T G "int_fast32_t" 5 121 "sint32" `865 
+T G "uint_fast32_t" 5 122 "int32" `866 
+D G "INT_FAST16_MAX" 5 124 " (32767)"
+D G "INT_FAST16_MIN" 5 125 " (-32768)"
+D G "UINT_FAST16_MAX" 5 126 " (65535)"
+D G "INT_FAST32_MAX" 5 128 " (2147483647)"
+D G "INT_FAST32_MIN" 5 129 " (-2147483648)"
+D G "UINT_FAST32_MAX" 5 130 " (4294967295)"
+T G "uintptr_t" 5 148 "int16" `867 
+T G "intptr_t" 5 149 "sint16" `868 
+D G "INT8_C" 5 152 "(val) ((int8_t)val)"
+D G "UINT8_C" 5 153 "(val) ((uint8_t)val)"
+D G "INT16_C" 5 154 "(val) ((int16_t)val)"
+D G "UINT16_C" 5 155 "(val) ((uint16_t)val)"
+D G "INT32_C" 5 156 "(val) ((int32_t)val)"
+D G "UINT32_C" 5 157 "(val) ((uint32_t)val)"
+T G "intmax_t" 5 181 "sint32" `869 
+T G "uintmax_t" 5 182 "int32" `870 
+D G "INTMAXN_MAX" 5 184 " (2147483647)"
+D G "INTMAXN_MIN" 5 185 " (-2147483648)"
+D G "UINTMAXN_MAX" 5 186 " (4294967295)"
+D G "INTMAX_C" 5 188 "(value) ((signed int32)val)"
+D G "UINTMAX_C" 5 189 "(value) ((unsigned int32)val)"
+D G "SSD1306_I2C_ADDRESS" 4 16 "0x7A"
+D G "SSD1306_128_64" 4 19 ""
+D G "SSD1306_LCDWIDTH" 4 26 "128"
+D G "SSD1306_LCDHEIGHT" 4 27 "64"
+D G "SSD1306_SETCONTRAST" 4 38 "0x81"
+D G "SSD1306_DISPLAYALLON_RESUME" 4 39 "0xA4"
+D G "SSD1306_DISPLAYALLON" 4 40 "0xA5"
+D G "SSD1306_NORMALDISPLAY" 4 41 "0xA6"
+D G "SSD1306_INVERTDISPLAY_" 4 42 "0xA7"
+D G "SSD1306_DISPLAYOFF" 4 43 "0xAE"
+D G "SSD1306_DISPLAYON" 4 44 "0xAF"
+D G "SSD1306_SETDISPLAYOFFSET" 4 45 "0xD3"
+D G "SSD1306_SETCOMPINS" 4 46 "0xDA"
+D G "SSD1306_SETVCOMDETECT" 4 47 "0xDB"
+D G "SSD1306_SETDISPLAYCLOCKDIV" 4 48 "0xD5"
+D G "SSD1306_SETPRECHARGE" 4 49 "0xD9"
+D G "SSD1306_SETMULTIPLEX" 4 50 "0xA8"
+D G "SSD1306_SETLOWCOLUMN" 4 51 "0x00"
+D G "SSD1306_SETHIGHCOLUMN" 4 52 "0x10"
+D G "SSD1306_SETSTARTLINE" 4 53 "0x40"
+D G "SSD1306_MEMORYMODE" 4 54 "0x20"
+D G "SSD1306_COLUMNADDR" 4 55 "0x21"
+D G "SSD1306_PAGEADDR" 4 56 "0x22"
+D G "SSD1306_COMSCANINC" 4 57 "0xC0"
+D G "SSD1306_COMSCANDEC" 4 58 "0xC8"
+D G "SSD1306_SEGREMAP" 4 59 "0xA0"
+D G "SSD1306_CHARGEPUMP" 4 60 "0x8D"
+D G "SSD1306_EXTERNALVCC" 4 61 "0x01"
+D G "SSD1306_SWITCHCAPVCC" 4 62 "0x02"
+D G "SSD1306_ACTIVATE_SCROLL" 4 65 "0x2F"
+D G "SSD1306_DEACTIVATE_SCROLL" 4 66 "0x2E"
+D G "SSD1306_SET_VERTICAL_SCROLL_AREA" 4 67 "0xA3"
+D G "SSD1306_RIGHT_HORIZONTAL_SCROLL" 4 68 "0x26"
+D G "SSD1306_LEFT_HORIZONTAL_SCROLL" 4 69 "0x27"
+D G "SSD1306_VERTICAL_AND_RIGHT_HORIZONTAL_SCROLL" 4 70 "0x29"
+D G "SSD1306_VERTICAL_AND_LEFT_HORIZONTAL_SCROLL" 4 71 "0x2A"
+V G "_i2caddr" 4 74 "uint8_t" `871 
+V G "_vccstate" 4 74 "uint8_t" `872 
+V G "x_pos" 4 74 "uint8_t" `873 
+V G "y_pos" 4 74 "uint8_t" `874 
+V G "wrap" 4 78 "int1" `875 
+V G "Font" 4 80 "[1]" `877 
+V G "Font2" 4 133 "[1]" `880 
+F N "ssd1306_command" 4 181 ""
+V L "c" 4 181 "uint8_t" `883 
+F G "ssd1306_command" 4 181 "void(uint8_t c)" `882 
+V L "control" 4 182 "uint8_t" `884 
+C L "ssd1306_command" 4 14 1 "FUNCTION"
+F N "SSD1306_Init" 4 190 ""
+V L "vccstate" 4 190 "uint8_t" `886 
+V L "i2caddr" 4 190 "uint8_t" `887 
+F G "SSD1306_Init" 4 190 "void(uint8_t=2 vccstate,uint8_t=122 i2caddr)" `885 
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+C L "SSD1306_Init" 4 14 1 "FUNCTION"
+F N "SSD1306_StartScrollRight" 4 261 ""
+V L "start" 4 261 "uint8_t" `891 
+V L "stop" 4 261 "uint8_t" `892 
+F G "SSD1306_StartScrollRight" 4 261 "void(uint8_t start,uint8_t stop)" `890 
+C L "SSD1306_StartScrollRight" 4 14 1 "FUNCTION"
+C L "SSD1306_StartScrollRight" 4 14 1 "FUNCTION"
+F N "SSD1306_StartScrollLeft" 4 272 ""
+V L "start" 4 272 "uint8_t" `894 
+V L "stop" 4 272 "uint8_t" `895 
+F G "SSD1306_StartScrollLeft" 4 272 "void(uint8_t start,uint8_t stop)" `893 
+F N "SSD1306_StartScrollDiagRight" 4 283 ""
+V L "start" 4 283 "uint8_t" `897 
+V L "stop" 4 283 "uint8_t" `898 
+F G "SSD1306_StartScrollDiagRight" 4 283 "void(uint8_t start,uint8_t stop)" `896 
+F N "SSD1306_StartScrollDiagLeft" 4 296 ""
+V L "start" 4 296 "uint8_t" `900 
+V L "stop" 4 296 "uint8_t" `901 
+F G "SSD1306_StartScrollDiagLeft" 4 296 "void(uint8_t start,uint8_t stop)" `899 
+F N "SSD1306_StopScroll" 4 309 ""
+F G "SSD1306_StopScroll" 4 309 "void()" `902 
+F N "SSD1306_Dim" 4 313 ""
+V L "dim" 4 313 "int8" `904 
+F G "SSD1306_Dim" 4 313 "void(int8 dim)" `903 
+V L "contrast" 4 314 "uint8_t" `905 
+C L "SSD1306_Dim" 4 14 1 "FUNCTION"
+C L "SSD1306_Dim" 4 14 2 "FUNCTION"
+F N "SSD1306_SetTextWrap" 4 329 ""
+V L "w" 4 329 "int8" `907 
+F G "SSD1306_SetTextWrap" 4 329 "void(int8 w)" `906 
+F N "SSD1306_InvertDisplay" 4 333 ""
+V L "i" 4 333 "int8" `909 
+F G "SSD1306_InvertDisplay" 4 333 "void(int8 i)" `908 
+F N "SSD1306_GotoXY" 4 340 ""
+V L "x" 4 340 "uint8_t" `911 
+V L "y" 4 340 "uint8_t" `912 
+F G "SSD1306_GotoXY" 4 340 "void(uint8_t x,uint8_t y)" `910 
+F N "SSD1306_PutC" 4 347 ""
+V L "c" 4 347 "uint8_t" `914 
+F G "SSD1306_PutC" 4 347 "void(uint8_t c)" `913 
+V L "font_c" 4 348 "uint8_t" `915 
+C L "SSD1306_PutC" 4 14 1 "FUNCTION"
+C L "SSD1306_PutC" 4 14 1 "FUNCTION"
+C L "SSD1306_PutC" 4 14 1 "FUNCTION"
+V L "i" 4 363 "uint8_t" `919 
+F N "SSD1306_PutCustomC" 4 379 ""
+V L "c" 4 379 "*int8" `924 
+F G "SSD1306_PutCustomC" 4 379 "void(*int8 c)" `923 
+V L "line" 4 380 "uint8_t" `925 
+C L "SSD1306_PutCustomC" 4 14 1 "FUNCTION"
+C L "SSD1306_PutCustomC" 4 14 1 "FUNCTION"
+C L "SSD1306_PutCustomC" 4 14 1 "FUNCTION"
+V L "i" 4 393 "uint8_t" `926 
+F N "SSD1306_ClearDisplay" 4 405 ""
+F G "SSD1306_ClearDisplay" 4 405 "void()" `927 
+C L "SSD1306_ClearDisplay" 4 14 1 "FUNCTION"
+C L "SSD1306_ClearDisplay" 4 14 1 "FUNCTION"
+C L "SSD1306_ClearDisplay" 4 14 1 "FUNCTION"
+C L "SSD1306_ClearDisplay" 4 14 1 "FUNCTION"
+V L "i" 4 429 "uint16_t" `928 
+F N "SSD1306_FillScreen" 4 436 ""
+F G "SSD1306_FillScreen" 4 436 "void()" `929 
+C L "SSD1306_FillScreen" 4 14 1 "FUNCTION"
+C L "SSD1306_FillScreen" 4 14 1 "FUNCTION"
+C L "SSD1306_FillScreen" 4 14 1 "FUNCTION"
+C L "SSD1306_FillScreen" 4 14 1 "FUNCTION"
+V L "i" 4 460 "uint16_t" `930 
+V G "loop0" 0 20 "int16" `933 
+V G "loop1" 0 21 "int16" `934 
+V G "rdir" 0 22 "int8" `935 
+V G "angle" 0 24 "int8" `936 
+V G "clear" 0 26 "int8" `937 
+V G "duration" 0 28 "int16" `938 
+V G "distance" 0 29 "int16" `939 
+V G "inrange" 0 30 "int8" `940 
+V G "remain" 0 31 "int8" `941 
+V G "measure" 0 33 "int8" `942 
+V G "rad" 0 35 "sint8" `943 
+V G "radf" 0 36 "float" `944 
+V G "posx" 0 37 "int8" `945 
+V G "posy" 0 37 "int8" `946 
+V G "oledx" 0 38 "int8" `947 
+V G "oledy" 0 38 "int8" `948 
+V G "leftside" 0 40 "int8" `949 
+F N "timer0_ovf" 0 45 ""
+F G "timer0_ovf" 0 46 "void()" `950 
+F N "MAIN" 0 93 ""
+F G "MAIN" 0 93 "void()" `951 
+C L "MAIN" 0 103 1 "FUNCTION"
+C L "MAIN" 0 103 1 "FUNCTION"
+C L "MAIN" 0 103 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 0
