@@ -53,7 +53,7 @@ void rtcc()
   } else {
    if (mod1 == 1 && angle < 42) {
       angle++;
-   } else if (mod1 == 0 && angle > 8) {
+   } else if (mod1 == 0 && angle > 5) {
       angle--;
    } else {
       if(mod1 == 0)

@@ -1,9 +1,9 @@
-D G "__PCM__" 0 143 ""5.105Pd""
-D G "__DEVICE__" 0 143 "877"
-D G "__DATE__" 0 143 ""17-Nov-21""
-D G "__TIME__" 0 143 ""17:17:39""
-D G "_UNICODE" 0 143 ""?""
-D G "__EVAL" 0 143 ""?"" "Standard Header file for the PIC16F877A device ////////////////"
+D G "__PCM__" 0 107 ""5.105Pd""
+D G "__DEVICE__" 0 107 "877"
+D G "__DATE__" 0 107 ""24-Nov-21""
+D G "__TIME__" 0 107 ""01:18:41""
+D G "_UNICODE" 0 107 ""?""
+D G "__EVAL" 0 107 ""?"" "Standard Header file for the PIC16F877A device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 F N "set_tris_a" 2 37 ""
 V L "value" 2 37 "int8" `55 
@@ -1372,23 +1372,17 @@ C L "SSD1306_FillScreen" 3 14 1 "FUNCTION"
 C L "SSD1306_FillScreen" 3 14 1 "FUNCTION"
 C L "SSD1306_FillScreen" 3 14 1 "FUNCTION"
 V L "i" 3 460 "uint16_t" `788 
-V G "loop0" 0 19 "int8" `791 
+V G "loop0" 0 19 "int16" `791 
 V G "loop1" 0 20 "int16" `792 
 V G "mod1" 0 21 "int8" `793 
 V G "angle" 0 23 "int8" `794 
 V G "test" 0 25 "int8" `795 
-V G "measure" 0 28 "int8" `796 
-V G "responseloop" 0 29 "int16" `797 
-V G "responsedelay" 0 30 "int8" `798 
-V G "distance" 0 31 "int8" `799 
-F N "rtcc" 0 34 ""
-F G "rtcc" 0 35 "void()" `800 
-F N "timer2" 0 77 ""
-F G "timer2" 0 78 "void()" `801 
-F N "MAIN" 0 112 ""
-F G "MAIN" 0 112 "void()" `802 
-C L "MAIN" 0 28 1 "FUNCTION"
-C L "MAIN" 0 28 1 "FUNCTION"
+F N "rtcc" 0 29 ""
+F G "rtcc" 0 30 "void()" `796 
+F N "MAIN" 0 71 ""
+F G "MAIN" 0 71 "void()" `797 
+C L "MAIN" 0 81 1 "FUNCTION"
+C L "MAIN" 0 81 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 0

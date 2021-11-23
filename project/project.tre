@@ -1,5 +1,5 @@
 ÀÄproject
-   ÃÄMAIN  0/133  Ram=1
+   ÃÄMAIN  0/119  Ram=1
    ³  ÃÄ@cinit1  (Inline)  Ram=0
    ³  ÃÄ@cinit2  (Inline)  Ram=0
    ³  ÃÄ@delay_ms1  0/20  Ram=1
@@ -125,5 +125,4 @@
    ³     ³  ÀÄ*
    ³     ÀÄSSD1306_PutC  0/123  Ram=5
    ³        ÀÄ*
-   ÃÄrtcc  0/74  Ram=0
-   ÀÄtimer2  0/56  Ram=1
+   ÀÄrtcc  0/89  Ram=0

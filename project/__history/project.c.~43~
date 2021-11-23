@@ -16,7 +16,7 @@
 #bit echo = porta.1
 
 
-int16 loop0 = 0;
+int8 loop0 = 0;
 int16 loop1 = 0;
 int mod1 = 1;
 
@@ -51,9 +51,9 @@ void rtcc()
   {
    loop1++;
   } else {
-   if (mod1 == 1 && angle < 42) {
+   if (mod1 == 1 && angle < 40) {
       angle++;
-   } else if (mod1 == 0 && angle > 8) {
+   } else if (mod1 == 0 && angle > 20) {
       angle--;
    } else {
       if(mod1 == 0)

@@ -1,14 +1,14 @@
-004-005 @READ_PROGRAM_MEMORY8.P1
-004-005 @WRITE_PROGRAM_MEMORY8.P2
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
 005.0   trig
 005     porta
 005.1   echo
 008     PSP_DATA
-015     CCP_1
 015     CCP_1_LOW
+015     CCP_1
 016     CCP_1_HIGH
-01B     CCP_2
 01B     CCP_2_LOW
+01B     CCP_2
 01C     CCP_2_HIGH
 020     @INTERRUPT_AREA
 021     @INTERRUPT_AREA
@@ -27,43 +27,38 @@
 02E     x_pos
 02F     y_pos
 030.0   wrap
-031     loop0
-032-033 loop1
-034     mod1
-035     angle
-036     test
-037     measure
-038-039 responseloop
-03A     responsedelay
-03B     distance
-03C-03D @sprintf_string
-03E     @PRINTF_U_771.P1
-03E     SSD1306_Init.vccstate
-03E-03F SSD1306_ClearDisplay.i
-03E     SSD1306_GotoXY.x
-03E     MAIN.@SCRATCH1
-03E     @PSTRINGC7_771.@SCRATCH1
-03F     SSD1306_GotoXY.y
-03F     @PRINTF_U_771.P1
-03F     SSD1306_Init.i2caddr
-03F     @PSTRINGC7_771.@SCRATCH2
-040     @delay_ms1.P1
-040     @PSTRINGC7_771.@SCRATCH3
-041     SSD1306_PutC.c
-041     @PSTRINGC7_771.@SCRATCH4
-042     SSD1306_PutC.font_c
-043     SSD1306_PutC.i
-044     @DIV88.P1
-044     SSD1306_PutC.@SCRATCH1
-045     ssd1306_command.c
-045     @DIV88.P1
-045     SSD1306_PutC.@SCRATCH2
-046     @MUL88.P1
-046     ssd1306_command.control
-046     @DIV88.@SCRATCH1
-047     @MUL88.P1
-047     @I2C_WRITEU_129.P2
-048     timer2.@SCRATCH1
+031-032 loop0
+033-034 loop1
+035     mod1
+036     angle
+037     test
+038-039 @sprintf_string
+03A     SSD1306_GotoXY.x
+03A     SSD1306_Init.vccstate
+03A     @PRINTF_U_771.P1
+03A-03B SSD1306_ClearDisplay.i
+03A     MAIN.@SCRATCH1
+03A     @PSTRINGC7_771.@SCRATCH1
+03B     @PRINTF_U_771.P1
+03B     SSD1306_GotoXY.y
+03B     SSD1306_Init.i2caddr
+03B     @PSTRINGC7_771.@SCRATCH2
+03C     @delay_ms1.P1
+03C     @PSTRINGC7_771.@SCRATCH3
+03D     SSD1306_PutC.c
+03D     @PSTRINGC7_771.@SCRATCH4
+03E     SSD1306_PutC.font_c
+03F     SSD1306_PutC.i
+040     @DIV88.P1
+040     SSD1306_PutC.@SCRATCH1
+041     ssd1306_command.c
+041     @DIV88.P1
+041     SSD1306_PutC.@SCRATCH2
+042     @MUL88.P1
+042     ssd1306_command.control
+042     @DIV88.@SCRATCH1
+043     @MUL88.P1
+043     @I2C_WRITEU_129.P2
 077     @SCRATCH
 078     @SCRATCH
 078     _RETURN_
@@ -139,42 +134,41 @@ FFF     @INTERRUPT_AREA
 1FFF     @INTERRUPT_AREA
 
 ROM Allocation:
-000058  Font.call
-00005F  Font.data
-00015E  Font2.call
-000165  Font2.data
-000241  rtcc
-00028B  timer2
-0002C3  @const805.call
-0002CE  @const810.call
-0002D5  @delay_ms1
-0002E9  @I2C_WRITEU_129
-0002F9  ssd1306_command
-00030E  SSD1306_Init
-000381  SSD1306_ClearDisplay
-0003AE  SSD1306_GotoXY
-0003BB  @MUL88
-0003E0  @DIV88
-0003F5  SSD1306_PutC
-000470  @PSTRINGC7_771
-0004C6  @PRINTF_U_771
-0004FD  @cinit1
-0004FD  MAIN
-00052D  @cinit2
+00004F  Font.call
+000056  Font.data
+000155  Font2.call
+00015C  Font2.data
+000238  rtcc
+000291  @const800.call
+00029C  @const805.call
+0002A3  @delay_ms1
+0002B7  @I2C_WRITEU_129
+0002C7  ssd1306_command
+0002DC  SSD1306_Init
+00034F  SSD1306_ClearDisplay
+00037C  SSD1306_GotoXY
+000389  @MUL88
+0003AE  @DIV88
+0003C3  SSD1306_PutC
+00043E  @PSTRINGC7_771
+000494  @PRINTF_U_771
+0004CB  @cinit1
+0004CB  MAIN
+0004F7  @cinit2
 
 Project Directory:
     C:\Users\dhkim\Documents\GitHub\pic16f877a_SSD1306_i2c_radar_project\project\
 
 Project Files:
-    project.c                                               [17-11-21 17:17  CRC=B2EEB68B]
+    project.c                                               [24-11-21 01:18  CRC=B4AA233B]
     project.h                                               [17-11-21 08:55  CRC=00000000]
     ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [12-7-21 11:35  CRC=4E256CC5]
     ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\SSD1306.c [17-11-21 00:17  CRC=ED16C3DA]
     ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h [13-5-20 09:33  CRC=4FD89CC0]
 
-Source signature=8DDC20AA
+Source signature=8F978D5A
 Program memory checksum=0000
-Hex file CRC=EA17
+Hex file CRC=1705
 
 Units:
     C:\Users\dhkim\Documents\GitHub\pic16f877a_SSD1306_i2c_radar_project\project\project (main)
