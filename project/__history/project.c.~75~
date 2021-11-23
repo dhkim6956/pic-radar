@@ -22,11 +22,9 @@ int rdir = 1;
 
 int8 angle = 30;
 
-int16 duration = 0;
-int16 distance = 0;
-unsigned int8 disp = 0;
 
-int measure = 0;
+unsigned int32 measure = 0;
+int state = 0;
 
 
 #INT_TIMER0                   //0.05ms timer interrupt
@@ -69,11 +67,27 @@ void timer0_ovf()
    }
    loop1 = 0;
   }
-  
-  if(measure == 1)
-  {
-   duration++;
-  }
+}
+
+#INT_TIMER2
+void timer2_ovf()
+{
+   if(measure < 100000)
+   {
+      measure++;
+   } else {
+      measure = 0;
+      
+      if(state == 0)
+      {
+         output_high(PIN_A2);
+         state = 1;
+      } else
+      {
+         output_low(PIN_A2);
+         state = 0;
+      }
+   }
 }
 
 
@@ -82,6 +96,7 @@ void main() {
   
   
   enable_interrupts(INT_TIMER0);
+  enable_interrupts(INT_TIMER2);
   enable_interrupts(global);
   
   
@@ -101,24 +116,12 @@ void main() {
   set_timer0(0x06);
   setup_timer_0(T0_INTERNAL|T0_DIV_1);
   
+  set_timer2(0x00);
+  setup_timer_2(T2_DIV_BY_1, 0x31, 1);
+  
   SSD1306_ClearDisplay();
 
   while(TRUE) {
-    
-    
-    output_high(PIN_A0);
-    delay_us(10);
-    output_low(PIN_A0);
-    
-    while(!input(PIN_A1));
-    duration = 0;
-    distance = 0;
-    measure = 1;
-    while(input(PIN_A1));
-    measure = 0;
-    
-    distance = (duration * 50)/58;
-    
     disp = distance/10;
     
     SSD1306_GotoXY(1, 1);

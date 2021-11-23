@@ -55,25 +55,42 @@ D1_L28=[62132]Started Editing.
 D1_L29=[62552]Stopped Editing.
 D1_L30=[64293]Project Closed.
 D2=24-11-2021
-D2_L=6
+D2_L=21
 D2_L1=[3308]Project Opened.
 D2_L2=[3327]Started Editing.
 D2_L3=[3826]Stopped Editing.
 D2_L4=[4179]Started Editing.
 D2_L5=[5020]Stopped Editing.
 D2_L6=[5115]Started Editing.
+D2_L7=[5912]Stopped Editing.
+D2_L8=[6079]Started Editing.
+D2_L9=[8111]Stopped Editing.
+D2_L10=[8158]Started Editing.
+D2_L11=[8549]Stopped Editing.
+D2_L12=[8730]Started Editing.
+D2_L13=[9164]Stopped Editing.
+D2_L14=[9421]Started Editing.
+D2_L15=[10294]Stopped Editing.
+D2_L16=[11156]Started Editing.
+D2_L17=[12063]Stopped Editing.
+D2_L18=[12392]Started Editing.
+D2_L19=[13139]Stopped Editing.
+D2_L20=[13830]Started Editing.
+D2_L21=[14328]Stopped Editing.
 
 [Opened Files]
 1=project.c
-t1=9
-Count=2
+t1=85
+Count=3
 2=..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
-t2=79
+t2=205
+3=..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\SSD1306.c
+t3=82
 [project.c]
 Type=4
 
 [defines]
-buildcount=41
+buildcount=57
 [Units]
 Count=1
 1=project (main)

@@ -26,8 +26,6 @@ int16 duration = 0;
 int16 distance = 0;
 unsigned int8 disp = 0;
 
-int measure = 0;
-
 
 #INT_TIMER0                   //0.05ms timer interrupt
 void timer0_ovf()
@@ -69,11 +67,12 @@ void timer0_ovf()
    }
    loop1 = 0;
   }
-  
-  if(measure == 1)
-  {
+}
+
+#INT_TIMER2
+void timer2_ovf()
+{
    duration++;
-  }
 }
 
 
@@ -82,6 +81,7 @@ void main() {
   
   
   enable_interrupts(INT_TIMER0);
+  enable_interrupts(INT_TIMER2);
   enable_interrupts(global);
   
   
@@ -113,16 +113,17 @@ void main() {
     while(!input(PIN_A1));
     duration = 0;
     distance = 0;
-    measure = 1;
+    setup_timer_2(T2_DIV_BY_1, 0xF9, 1);
     while(input(PIN_A1));
-    measure = 0;
     
-    distance = (duration * 50)/58;
+    distance = (170*(duration * 50))/100;
     
-    disp = distance/10;
+    disp = distance / 2;
     
-    SSD1306_GotoXY(1, 1);
-    printf(SSD1306_PutC, "%03u", disp);
+    SSD1306_GotoXY(21, 1);
+    //printf(SSD1306_PutC, "%03u", disp);
+    
+    printf(SSD1306_PutC, "abcdefg");
   }
 
 }

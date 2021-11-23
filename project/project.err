@@ -1,5 +1,4 @@
-Compiling C:\Users\dhkim\Documents\GitHub\pic16f877a_SSD1306_i2c_radar_project\project\project on 24-11-21 at 01:18
->>> Warning 202 "C:\Users\dhkim\Documents\GitHub\pic16f877a_SSD1306_i2c_radar_project\project\project.c" Line 25(5,9): Variable never used:   test
-      Memory usage:   ROM=16%      RAM=9% - 11%
-      0 Errors,  1 Warnings.
+Compiling C:\Users\dhkim\Documents\GitHub\pic16f877a_SSD1306_i2c_radar_project\project\project on 24-11-21 at 03:54
+      Memory usage:   ROM=18%      RAM=10% - 12%
+      0 Errors,  0 Warnings.
 Build Successful.
