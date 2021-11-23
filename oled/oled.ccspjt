@@ -17,7 +17,7 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=1
+Days=2
 D1=16-11-2021
 D1_L=4
 D1_L1=[85526]Project Opened.
@@ -28,11 +28,17 @@ TotalDebug=0
 D1_E=2
 D1_D=0
 D1_L4=[85615]Project Closed.
+D2=17-11-2021
+D2_L=2
+D2_L1=[32001]Project Opened.
+D2_L2=[32065]Project Closed.
 
 [Opened Files]
 1=oled.c
 t1=1
-Count=1
+Count=2
+2=..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+t2=1
 [oled.c]
 Type=4
 [Units]

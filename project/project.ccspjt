@@ -1,0 +1,71 @@
+[PROJECT]
+Target=project.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.105dP-07/12/21
+Compiler=PCM
+CCSVersion=5.105Pd
+[Target Data]
+FileList=project.c
+[Directories]
+Include=
+[C:\Users\dhkim\Documents\GitHub\pic16f877a_SSD1306_i2c_radar_project\project\project]
+Type=4
+[mru-list]
+1=project.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=17-11-2021
+D1_L=30
+D1_L1=[32111]Project Opened.
+D1_L2=[32125]Started Editing.
+D1_L3=[32456]Stopped Editing.
+D1_L4=[34374]Started Editing.
+D1_L5=[34734]Stopped Editing.
+D1_L6=[36587]Started Editing.
+D1_L7=[37074]Stopped Editing.
+D1_L8=[37524]Started Editing.
+D1_L9=[37978]Stopped Editing.
+D1_L10=[39662]Started Editing.
+D1_L11=[40287]Stopped Editing.
+D1_L12=[40402]Started Editing.
+D1_L13=[40840]Stopped Editing.
+D1_L14=[41169]Started Editing.
+D1_L15=[41765]Stopped Editing.
+D1_L16=[41778]Started Editing.
+D1_L17=[42648]Stopped Editing.
+TotalEdit=113
+TotalDebug=0
+D1_E=113
+D1_D=0
+D1_L18=[42648]Project Closed.
+D1_L19=[51672]Project Opened.
+D1_L20=[51711]Started Editing.
+D1_L21=[53225]Stopped Editing.
+D1_L22=[55685]Started Editing.
+D1_L23=[58678]Stopped Editing.
+D1_L24=[59174]Started Editing.
+D1_L25=[59565]Stopped Editing.
+D1_L26=[61315]Started Editing.
+D1_L27=[62123]Stopped Editing.
+D1_L28=[62132]Started Editing.
+D1_L29=[62552]Stopped Editing.
+D1_L30=[64293]Project Closed.
+
+[Opened Files]
+1=..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+t1=673
+Count=2
+2=project.c
+t2=673
+[project.c]
+Type=4
+
+[defines]
+buildcount=34
+[Units]
+Count=1
+1=project (main)
