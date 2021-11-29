@@ -175,6 +175,11 @@ void main() {
          
          SSD1306_DRAWDOT(oledx, oledy);
          
+         
+         
+         SSD1306_GotoXY(10, 1);
+         printf(SSD1306_PutC, "%02u %02u %02u %02u", oledx, oledy, posx, posy);
+         
        } else {
          distance = 0;
        }

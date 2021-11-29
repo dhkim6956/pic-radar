@@ -12,11 +12,9 @@
 #byte porta = 0x05
 
 // Include SSD1306 OLED driver source code
-#include <oled12864.c>
+#include <SSD1306.c>
 #bit trig = porta.0
 #bit echo = porta.1
-
-
 
 
 int16 loop0 = 0;
@@ -140,7 +138,7 @@ void main() {
        
        distance = (duration * 50)/58;     //distance (cm)
        
-       if(distance <= 30)                 //0~30cm
+       if(distance < 24 && distance > 3)
        {
          
          
@@ -155,17 +153,15 @@ void main() {
          
          radf = pi / 180 * rad;
          
-         posx = sin(radf) * distance / 2; //0~15cm
-         posy = cos(radf) * distance / 2;
+         posx = sin(radf) * distance / 3;
+         posy = cos(radf) * distance / 3;
          
          if(leftside == 1) {
-            oledx = 17 - posx;            //2~32
+            oledx = 11 - posx;
          } else {
-            oledx = 17 + posx;
+            oledx = 11 + posx;
          }
-         oledy = 16 - posy;               //1~16
-         
-         
+         oledy = 8 - posy;
          
          SSD1306_GotoXY(1, 1);
          printf(SSD1306_PutC, "%02u", distance);
@@ -173,7 +169,13 @@ void main() {
          SSD1306_GotoXY(1, 2);
          SSD1306_PutC("(cm)");
          
-         SSD1306_DRAWDOT(oledx, oledy);
+         SSD1306_GotoXY(oledx, oledy);
+         SSD1306_PutC("o");
+         
+         
+         
+         SSD1306_GotoXY(10, 1);
+         printf(SSD1306_PutC, "%02u %02u %02u %02u", oledx, oledy, posx, posy);
          
        } else {
          distance = 0;
@@ -181,8 +183,6 @@ void main() {
     } else {
       output_low(PIN_A0);
     }
-    
-    SSD1306_UPDATEDISPLAY();
   }
 }
 // End of code

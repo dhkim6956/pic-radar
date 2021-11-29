@@ -1,9 +1,9 @@
-D G "__PCM__" 0 0 ""5.105Pd""
-D G "__DEVICE__" 0 0 ""
-D G "__DATE__" 0 0 ""29-Nov-21""
-D G "__TIME__" 0 0 ""14:03:55""
-D G "_UNICODE" 0 0 ""?""
-D G "__EVAL" 0 0 ""?"" "Standard Header file for the PIC16F877A device ////////////////"
+D G "__PCM__" 0 195 ""5.105Pd""
+D G "__DEVICE__" 0 195 "877"
+D G "__DATE__" 0 195 ""29-Nov-21""
+D G "__TIME__" 0 195 ""17:08:11""
+D G "_UNICODE" 0 195 ""?""
+D G "__EVAL" 0 195 ""?"" "Standard Header file for the PIC16F877A device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 F N "set_tris_a" 2 37 ""
 V L "value" 2 37 "int8" `55 
@@ -389,9 +389,9 @@ F N "read_adc" 2 373 ""
 f G "read_adc" 2 373 "int16()" `207 
 F N "read_adc" 2 374 ""
 V L "mode" 2 374 "int8" `208 
-f G "read_adc" 2 374 "int16(int8 mode)" `207 
+f G "read_adc" 2 374 "int16(int8 mode,int8 setting)" `207 
 F N "adc_done" 2 375 ""
-F B "adc_done" 2 375 "int8(int8 mode)" `207  "Constants used for SETUP_ADC() are:"
+F B "adc_done" 2 375 "int8(int8 mode,int8 setting)" `207  "Constants used for SETUP_ADC() are:"
 D G "ADC_OFF" 2 377 "0" "ADC Off"
 D G "ADC_CLOCK_DIV_2" 2 378 "0x10000"
 D G "ADC_CLOCK_DIV_4" 2 379 "0x4000"
@@ -836,9 +836,9 @@ F B "i2c_transfer_in" 2 546 "int8(int8 stream,int8 address,*int8 rData,int8 rCou
 F N "spi_xfer" 2 549 ""
 F B "spi_xfer" 2 549 "int8()" `502 
 F N "spi_xfer" 2 550 ""
-f G "spi_xfer" 2 550 "int16()" `503 
+f G "spi_xfer" 2 550 "int16(int8 data)" `503 
 F N "spi_xfer" 2 551 ""
-f G "spi_xfer" 2 551 "int32()" `503 
+f G "spi_xfer" 2 551 "int32(int8 data)" `503 
 F N "spi_xfer" 2 552 ""
 V L "data" 2 552 "int8" `504 
 F B "spi_xfer" 2 552 "int8(int8 data)" `503 
@@ -918,18 +918,18 @@ F B "spi_prewrite" 2 571 "void(int8 ,int32 data)" `556
 F N "spi_xfer_in" 2 572 ""
 F B "spi_xfer_in" 2 572 "int8()" `559 
 F N "spi_xfer_in" 2 573 ""
-f G "spi_xfer_in" 2 573 "int16()" `560 
+f G "spi_xfer_in" 2 573 "int16(int8 bits)" `560 
 F N "spi_xfer_in" 2 574 ""
-f G "spi_xfer_in" 2 574 "int32()" `560 
+f G "spi_xfer_in" 2 574 "int32(int8 bits)" `560 
 F N "spi_xfer_in" 2 575 ""
 V L "bits" 2 575 "int8" `561 
 F B "spi_xfer_in" 2 575 "int8(int8 bits)" `560 
 F N "spi_xfer_in" 2 576 ""
 V L "bits" 2 576 "int8" `563 
-f G "spi_xfer_in" 2 576 "int16(int8 bits)" `562 
+f G "spi_xfer_in" 2 576 "int16(int8 bits,int8 bits)" `562 
 F N "spi_xfer_in" 2 577 ""
 V L "bits" 2 577 "int8" `563 
-f G "spi_xfer_in" 2 577 "int32(int8 bits)" `562 
+f G "spi_xfer_in" 2 577 "int32(int8 bits,int8 bits)" `562 
 F N "spi_xfer_in" 2 578 ""
 V L "stream" 2 578 "int8" `563 
 V L "bits" 2 578 "int8" `564 
@@ -937,11 +937,11 @@ F B "spi_xfer_in" 2 578 "int8(int8 stream,int8 bits)" `562
 F N "spi_xfer_in" 2 579 ""
 V L "stream" 2 579 "int8" `563 
 V L "bits" 2 579 "int8" `567 
-f G "spi_xfer_in" 2 579 "int16(int8 stream,int8 bits)" `565 
+f G "spi_xfer_in" 2 579 "int16(int8 stream,int8 bits,int16 count)" `565 
 F N "spi_xfer_in" 2 580 ""
 V L "stream" 2 580 "int8" `563 
 V L "bits" 2 580 "int8" `567 
-f G "spi_xfer_in" 2 580 "int32(int8 stream,int8 bits)" `565 
+f G "spi_xfer_in" 2 580 "int32(int8 stream,int8 bits,int16 count)" `565 
 F N "spi_transfer" 2 581 ""
 V L "wData" 2 581 "*int8" `566 
 V L "rData" 2 581 "*int8" `567 
@@ -1010,9 +1010,9 @@ F B "rtos_stats" 2 601 "void(int8 task,*int8 stat)" `608  "#use timer() Prototyp
 F N "get_ticks" 2 604 ""
 F B "get_ticks" 2 604 "int8()" `611 
 F N "get_ticks" 2 605 ""
-f G "get_ticks" 2 605 "int16()" `612 
+f G "get_ticks" 2 605 "int16(int8 stream)" `612 
 F N "get_ticks" 2 606 ""
-f G "get_ticks" 2 606 "int32()" `612 
+f G "get_ticks" 2 606 "int32(int8 stream)" `612 
 F N "get_ticks" 2 607 ""
 V L "stream" 2 607 "int8" `613 
 F B "get_ticks" 2 607 "int8(int8 stream)" `612 
@@ -1450,18 +1450,34 @@ V G "_i2caddr" 4 74 "uint8_t" `871
 V G "_vccstate" 4 74 "uint8_t" `872 
 V G "x_pos" 4 74 "uint8_t" `873 
 V G "y_pos" 4 74 "uint8_t" `874 
-V G "wrap" 4 78 "int1" `875 
-V G "Font" 4 80 "[1]" `877 
-V G "Font2" 4 133 "[1]" `880 
-F N "ssd1306_command" 4 181 ""
-V L "c" 4 181 "uint8_t" `883 
-F G "ssd1306_command" 4 181 "void(uint8_t c)" `882 
-V L "control" 4 182 "uint8_t" `884 
+V G "dispx1" 4 78 "int1[1]" `875 
+V G "dispx2" 4 79 "int1[1]" `876 
+V G "dispx3" 4 80 "int1[1]" `877 
+V G "dispx4" 4 81 "int1[1]" `878 
+V G "dispx5" 4 82 "int1[1]" `879 
+V G "dispx6" 4 83 "int1[1]" `880 
+V G "dispx7" 4 84 "int1[1]" `881 
+V G "dispx8" 4 85 "int1[1]" `882 
+V G "dispx9" 4 86 "int1[1]" `883 
+V G "dispx10" 4 87 "int1[1]" `884 
+V G "dispx11" 4 88 "int1[1]" `885 
+V G "dispx12" 4 89 "int1[1]" `886 
+V G "dispx13" 4 90 "int1[1]" `887 
+V G "dispx14" 4 91 "int1[1]" `888 
+V G "dispx15" 4 92 "int1[1]" `889 
+V G "dispx16" 4 93 "int1[1]" `890 
+V G "wrap" 4 96 "int1" `891 
+V G "Font" 4 98 "[1]" `893 
+V G "Font2" 4 151 "[1]" `896 
+F N "ssd1306_command" 4 199 ""
+V L "c" 4 199 "uint8_t" `899 
+F G "ssd1306_command" 4 199 "void(uint8_t c)" `898 
+V L "control" 4 200 "uint8_t" `900 
 C L "ssd1306_command" 4 14 1 "FUNCTION"
-F N "SSD1306_Init" 4 190 ""
-V L "vccstate" 4 190 "uint8_t" `886 
-V L "i2caddr" 4 190 "uint8_t" `887 
-F G "SSD1306_Init" 4 190 "void(uint8_t=2 vccstate,uint8_t=122 i2caddr)" `885 
+F N "SSD1306_Init" 4 208 ""
+V L "vccstate" 4 208 "uint8_t" `902 
+V L "i2caddr" 4 208 "uint8_t" `903 
+F G "SSD1306_Init" 4 208 "void(uint8_t=2 vccstate,uint8_t=122 i2caddr)" `901 
 C L "SSD1306_Init" 4 14 1 "FUNCTION"
 C L "SSD1306_Init" 4 14 1 "FUNCTION"
 C L "SSD1306_Init" 4 14 1 "FUNCTION"
@@ -1480,94 +1496,115 @@ C L "SSD1306_Init" 4 14 1 "FUNCTION"
 C L "SSD1306_Init" 4 14 1 "FUNCTION"
 C L "SSD1306_Init" 4 14 1 "FUNCTION"
 C L "SSD1306_Init" 4 14 1 "FUNCTION"
-F N "SSD1306_StartScrollRight" 4 261 ""
-V L "start" 4 261 "uint8_t" `891 
-V L "stop" 4 261 "uint8_t" `892 
-F G "SSD1306_StartScrollRight" 4 261 "void(uint8_t start,uint8_t stop)" `890 
+F N "SSD1306_StartScrollRight" 4 279 ""
+V L "start" 4 279 "uint8_t" `907 
+V L "stop" 4 279 "uint8_t" `908 
+F G "SSD1306_StartScrollRight" 4 279 "void(uint8_t start,uint8_t stop)" `906 
 C L "SSD1306_StartScrollRight" 4 14 1 "FUNCTION"
 C L "SSD1306_StartScrollRight" 4 14 1 "FUNCTION"
-F N "SSD1306_StartScrollLeft" 4 272 ""
-V L "start" 4 272 "uint8_t" `894 
-V L "stop" 4 272 "uint8_t" `895 
-F G "SSD1306_StartScrollLeft" 4 272 "void(uint8_t start,uint8_t stop)" `893 
-F N "SSD1306_StartScrollDiagRight" 4 283 ""
-V L "start" 4 283 "uint8_t" `897 
-V L "stop" 4 283 "uint8_t" `898 
-F G "SSD1306_StartScrollDiagRight" 4 283 "void(uint8_t start,uint8_t stop)" `896 
-F N "SSD1306_StartScrollDiagLeft" 4 296 ""
-V L "start" 4 296 "uint8_t" `900 
-V L "stop" 4 296 "uint8_t" `901 
-F G "SSD1306_StartScrollDiagLeft" 4 296 "void(uint8_t start,uint8_t stop)" `899 
-F N "SSD1306_StopScroll" 4 309 ""
-F G "SSD1306_StopScroll" 4 309 "void()" `902 
-F N "SSD1306_Dim" 4 313 ""
-V L "dim" 4 313 "int8" `904 
-F G "SSD1306_Dim" 4 313 "void(int8 dim)" `903 
-V L "contrast" 4 314 "uint8_t" `905 
+F N "SSD1306_StartScrollLeft" 4 290 ""
+V L "start" 4 290 "uint8_t" `910 
+V L "stop" 4 290 "uint8_t" `911 
+F G "SSD1306_StartScrollLeft" 4 290 "void(uint8_t start,uint8_t stop)" `909 
+F N "SSD1306_StartScrollDiagRight" 4 301 ""
+V L "start" 4 301 "uint8_t" `913 
+V L "stop" 4 301 "uint8_t" `914 
+F G "SSD1306_StartScrollDiagRight" 4 301 "void(uint8_t start,uint8_t stop)" `912 
+F N "SSD1306_StartScrollDiagLeft" 4 314 ""
+V L "start" 4 314 "uint8_t" `916 
+V L "stop" 4 314 "uint8_t" `917 
+F G "SSD1306_StartScrollDiagLeft" 4 314 "void(uint8_t start,uint8_t stop)" `915 
+F N "SSD1306_StopScroll" 4 327 ""
+F G "SSD1306_StopScroll" 4 327 "void()" `918 
+F N "SSD1306_Dim" 4 331 ""
+V L "dim" 4 331 "int8" `920 
+F G "SSD1306_Dim" 4 331 "void(int8 dim)" `919 
+V L "contrast" 4 332 "uint8_t" `921 
 C L "SSD1306_Dim" 4 14 1 "FUNCTION"
 C L "SSD1306_Dim" 4 14 2 "FUNCTION"
-F N "SSD1306_SetTextWrap" 4 329 ""
-V L "w" 4 329 "int8" `907 
-F G "SSD1306_SetTextWrap" 4 329 "void(int8 w)" `906 
-F N "SSD1306_InvertDisplay" 4 333 ""
-V L "i" 4 333 "int8" `909 
-F G "SSD1306_InvertDisplay" 4 333 "void(int8 i)" `908 
-F N "SSD1306_GotoXY" 4 340 ""
-V L "x" 4 340 "uint8_t" `911 
-V L "y" 4 340 "uint8_t" `912 
-F G "SSD1306_GotoXY" 4 340 "void(uint8_t x,uint8_t y)" `910 
-F N "SSD1306_PutC" 4 347 ""
-V L "c" 4 347 "uint8_t" `914 
-F G "SSD1306_PutC" 4 347 "void(uint8_t c)" `913 
-V L "font_c" 4 348 "uint8_t" `915 
+F N "SSD1306_SetTextWrap" 4 347 ""
+V L "w" 4 347 "int8" `923 
+F G "SSD1306_SetTextWrap" 4 347 "void(int8 w)" `922 
+F N "SSD1306_InvertDisplay" 4 351 ""
+V L "i" 4 351 "int8" `925 
+F G "SSD1306_InvertDisplay" 4 351 "void(int8 i)" `924 
+F N "SSD1306_GotoXY" 4 358 ""
+V L "x" 4 358 "uint8_t" `927 
+V L "y" 4 358 "uint8_t" `928 
+F G "SSD1306_GotoXY" 4 358 "void(uint8_t x,uint8_t y)" `926 
+F N "SSD1306_PutC" 4 365 ""
+V L "c" 4 365 "uint8_t" `930 
+F G "SSD1306_PutC" 4 365 "void(uint8_t c)" `929 
+V L "font_c" 4 366 "uint8_t" `931 
 C L "SSD1306_PutC" 4 14 1 "FUNCTION"
 C L "SSD1306_PutC" 4 14 1 "FUNCTION"
 C L "SSD1306_PutC" 4 14 1 "FUNCTION"
-V L "i" 4 363 "uint8_t" `919 
-F N "SSD1306_PutCustomC" 4 379 ""
-V L "c" 4 379 "*int8" `924 
-F G "SSD1306_PutCustomC" 4 379 "void(*int8 c)" `923 
-V L "line" 4 380 "uint8_t" `925 
+V L "i" 4 381 "uint8_t" `935 
+F N "SSD1306_PutCustomC" 4 397 ""
+V L "c" 4 397 "*int8" `940 
+F G "SSD1306_PutCustomC" 4 397 "void(*int8 c)" `939 
+V L "line" 4 398 "uint8_t" `941 
 C L "SSD1306_PutCustomC" 4 14 1 "FUNCTION"
 C L "SSD1306_PutCustomC" 4 14 1 "FUNCTION"
 C L "SSD1306_PutCustomC" 4 14 1 "FUNCTION"
-V L "i" 4 393 "uint8_t" `926 
-F N "SSD1306_ClearDisplay" 4 405 ""
-F G "SSD1306_ClearDisplay" 4 405 "void()" `927 
+V L "i" 4 411 "uint8_t" `942 
+F N "SSD1306_ClearDisplay" 4 423 ""
+F G "SSD1306_ClearDisplay" 4 423 "void()" `943 
+V L "i" 4 425 "int8" `944 
 C L "SSD1306_ClearDisplay" 4 14 1 "FUNCTION"
 C L "SSD1306_ClearDisplay" 4 14 1 "FUNCTION"
 C L "SSD1306_ClearDisplay" 4 14 1 "FUNCTION"
 C L "SSD1306_ClearDisplay" 4 14 1 "FUNCTION"
-V L "i" 4 429 "uint16_t" `928 
-F N "SSD1306_FillScreen" 4 436 ""
-F G "SSD1306_FillScreen" 4 436 "void()" `929 
+V L "i" 4 466 "uint16_t" `949 
+F N "SSD1306_FillScreen" 4 473 ""
+F G "SSD1306_FillScreen" 4 473 "void()" `950 
 C L "SSD1306_FillScreen" 4 14 1 "FUNCTION"
 C L "SSD1306_FillScreen" 4 14 1 "FUNCTION"
 C L "SSD1306_FillScreen" 4 14 1 "FUNCTION"
 C L "SSD1306_FillScreen" 4 14 1 "FUNCTION"
-V L "i" 4 460 "uint16_t" `930 
-V G "loop0" 0 20 "int16" `933 
-V G "loop1" 0 21 "int16" `934 
-V G "rdir" 0 22 "int8" `935 
-V G "angle" 0 24 "int8" `936 
-V G "clear" 0 26 "int8" `937 
-V G "duration" 0 28 "int16" `938 
-V G "distance" 0 29 "int8" `939 
-V G "measure" 0 31 "int8" `940 
-V G "rad" 0 33 "sint8" `941 
-V G "radf" 0 34 "float" `942 
-V G "posx" 0 35 "int8" `943 
-V G "posy" 0 35 "int8" `944 
-V G "oledx" 0 36 "int8" `945 
-V G "oledy" 0 36 "int8" `946 
-V G "leftside" 0 38 "int8" `947 
-F N "timer0_ovf" 0 43 ""
-F G "timer0_ovf" 0 44 "void()" `948 
-F N "MAIN" 0 91 ""
-F G "MAIN" 0 91 "void()" `949 
-C L "MAIN" 0 101 1 "FUNCTION"
-C L "MAIN" 0 101 1 "FUNCTION"
-C L "MAIN" 0 101 1 "FUNCTION"
+V L "i" 4 497 "uint16_t" `951 
+F N "SSD1306_UPDATEDISPLAY" 4 504 ""
+F G "SSD1306_UPDATEDISPLAY" 4 504 "void()" `952 
+V L "bufx1" 4 506 "int1" `953 
+V L "bufx2" 4 506 "int1" `954 
+V L "initj" 4 507 "int8" `955 
+V L "k" 4 508 "int8" `956 
+V L "j" 4 515 "int8" `957 
+V L "i" 4 558 "int8" `961 
+V L "i" 4 561 "int8" `962 
+V L "i" 4 566 "int8" `963 
+V L "i" 4 569 "int8" `964 
+F N "SSD1306_DRAWDOT" 4 578 ""
+V L "axisx" 4 578 "int8" `966 
+V L "axisy" 4 578 "int8" `967 
+F G "SSD1306_DRAWDOT" 4 578 "void(int8 axisx,int8 axisy)" `965 
+V G "loop0" 0 22 "int16" `970 
+V G "loop1" 0 23 "int16" `971 
+V G "scantime" 0 24 "int8" `972 
+V G "displaytime" 0 25 "int8" `973 
+V G "angle" 0 27 "int8" `974 
+V G "clear" 0 29 "int8" `975 
+V G "duration" 0 31 "int16" `976 
+V G "distance" 0 32 "int8" `977 
+V G "measure" 0 34 "int8" `978 
+V G "rad" 0 36 "sint8" `979 
+V G "radf" 0 37 "float" `980 
+V G "posx" 0 38 "int8" `981 
+V G "posy" 0 38 "int8" `982 
+V G "oledx" 0 39 "int8" `983 
+V G "oledy" 0 39 "int8" `984 
+V G "leftside" 0 41 "int8" `985 
+F N "timer0_ovf" 0 46 ""
+F G "timer0_ovf" 0 47 "void()" `986 
+F N "MAIN" 0 95 ""
+F G "MAIN" 0 95 "void()" `987 
+C L "MAIN" 0 105 1 "FUNCTION"
+C L "MAIN" 0 105 1 "FUNCTION"
+C L "MAIN" 0 105 1 "FUNCTION"
+C L "MAIN" 0 105 1 "FUNCTION"
+C L "MAIN" 0 105 1 "FUNCTION"
+C L "MAIN" 0 105 1 "FUNCTION"
+C L "MAIN" 0 105 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 0

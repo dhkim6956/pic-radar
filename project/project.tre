@@ -1,181 +1,231 @@
 ÀÄproject
-   ÃÄMAIN  1/542  Ram=4
+   ÃÄMAIN  2/601  Ram=4
    ³  ÃÄ@cinit1  (Inline)  Ram=0
    ³  ÃÄ@cinit2  (Inline)  Ram=0
    ³  ÃÄ@delay_ms1  0/20  Ram=1
-   ³  ÃÄSSD1306_Init  0/115  Ram=2
+   ³  ÃÄSSD1306_Init  0/177  Ram=2
    ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
-   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
-   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
-   ³  ³  ³  ÀÄ@I2C_WRITEU_129  0/16  Ram=1
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ³  ÀÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÀÄssd1306_command  0/21  Ram=2
+   ³  ³  ÀÄssd1306_command  0/27  Ram=2
    ³  ³     ÀÄ*
-   ³  ÃÄSSD1306_ClearDisplay  0/45  Ram=2
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ÃÄSSD1306_ClearDisplay  0/214  Ram=3
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
-   ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
-   ³  ³  ÀÄ@I2C_WRITEU_129  0/16  Ram=1
-   ³  ÃÄSSD1306_GotoXY  0/13  Ram=2
-   ³  ÃÄ@PSTRINGC7_913  0/86  Ram=4
-   ³  ³  ÃÄSSD1306_PutC  0/123  Ram=5
-   ³  ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ÀÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ÃÄSSD1306_GotoXY  0/19  Ram=2
+   ³  ÃÄ@PSTRINGC7_929  0/116  Ram=4
+   ³  ³  ÃÄSSD1306_PutC  0/155  Ram=5
+   ³  ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÃÄ@MUL88  0/37  Ram=2
-   ³  ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ³  ÃÄ@MUL88  0/39  Ram=2
+   ³  ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÃÄ@MUL88  0/37  Ram=2
-   ³  ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ³  ÃÄ@MUL88  0/39  Ram=2
+   ³  ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÃÄssd1306_command  0/21  Ram=2
+   ³  ³  ³  ÃÄssd1306_command  0/27  Ram=2
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
-   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
-   ³  ³  ³  ÃÄ@MUL88  0/37  Ram=2
-   ³  ³  ³  ÃÄ@const877  0/262  Ram=0
-   ³  ³  ³  ÃÄ@MUL88  0/37  Ram=2
-   ³  ³  ³  ÃÄ@const880  0/227  Ram=0
-   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
-   ³  ³  ³  ÀÄ@DIV88  0/21  Ram=3
-   ³  ³  ÀÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ³  ÃÄ@MUL88  0/39  Ram=2
+   ³  ³  ³  ÃÄ@const893  0/262  Ram=0
+   ³  ³  ³  ÃÄ@MUL88  0/39  Ram=2
+   ³  ³  ³  ÃÄ@const896  0/227  Ram=0
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ³  ÀÄ@DIV88  0/23  Ram=3
+   ³  ³  ÀÄSSD1306_PutC  0/155  Ram=5
    ³  ³     ÀÄ*
    ³  ÃÄ@delay_ms1  0/20  Ram=1
-   ³  ÃÄSSD1306_ClearDisplay  0/45  Ram=2
+   ³  ÃÄSSD1306_ClearDisplay  0/214  Ram=3
    ³  ³  ÀÄ*
-   ³  ÃÄSSD1306_ClearDisplay  0/45  Ram=2
+   ³  ÃÄSSD1306_ClearDisplay  0/214  Ram=3
    ³  ³  ÀÄ*
-   ³  ÃÄ@MUL1616  0/23  Ram=5
-   ³  ÃÄ@DIV1616  0/39  Ram=5
-   ³  ÃÄ@MUL88  0/37  Ram=2
-   ³  ÃÄ@MUL88  0/37  Ram=2
-   ³  ÃÄ@SITOF  0/39  Ram=2
-   ³  ÃÄ@MULFF  0/119  Ram=13
-   ³  ÃÄsin  0/48  Ram=8
-   ³  ³  ÃÄ@ADDFF  0/326  Ram=16
-   ³  ³  ÀÄcos  1/660  Ram=67
+   ³  ÃÄ@MUL1616  0/25  Ram=5
+   ³  ÃÄ@DIV1616  0/41  Ram=5
+   ³  ÃÄ@MUL88  0/39  Ram=2
+   ³  ÃÄ@MUL88  0/39  Ram=2
+   ³  ÃÄ@SITOF  0/41  Ram=2
+   ³  ÃÄ@MULFF  0/185  Ram=17
+   ³  ÃÄsin  0/46  Ram=8
+   ³  ³  ÃÄ@ADDFF  1/433  Ram=20
+   ³  ³  ÀÄcos  1/542  Ram=46
    ³  ³     ÃÄ@FLT  (Inline)  Ram=10
-   ³  ³     ÃÄ@MULFF  0/119  Ram=13
+   ³  ³     ÃÄ@MULFF  0/185  Ram=17
    ³  ³     ÃÄ@SFTOI  0/33  Ram=4
-   ³  ³     ÃÄ@MULFF  0/119  Ram=13
+   ³  ³     ÃÄ@MULFF  0/185  Ram=17
    ³  ³     ÃÄ@ITOF  0/31  Ram=2
-   ³  ³     ÃÄ@ADDFF  0/326  Ram=16
-   ³  ³     ÃÄ@MULFF  0/119  Ram=13
-   ³  ³     ÃÄ@ADDFF  0/326  Ram=16
-   ³  ³     ÃÄ@MULFF  0/119  Ram=13
-   ³  ³     ÃÄ@ADDFF  0/326  Ram=16
-   ³  ³     ÃÄ@MULFF  0/119  Ram=13
-   ³  ³     ÃÄ@MULFF  0/119  Ram=13
-   ³  ³     ÃÄ@MULFF  0/119  Ram=13
-   ³  ³     ÃÄ@MULFF  0/119  Ram=13
-   ³  ³     ÀÄ@ADDFF  0/326  Ram=16
+   ³  ³     ÃÄ@ADDFF  1/433  Ram=20
+   ³  ³     ÃÄ@MULFF  0/185  Ram=17
+   ³  ³     ÃÄ@ADDFF  1/433  Ram=20
+   ³  ³     ÃÄ@MULFF  0/185  Ram=17
+   ³  ³     ÃÄ@ADDFF  1/433  Ram=20
+   ³  ³     ÃÄ@MULFF  0/185  Ram=17
+   ³  ³     ÃÄ@MULFF  0/185  Ram=17
+   ³  ³     ÃÄ@MULFF  0/185  Ram=17
+   ³  ³     ÃÄ@MULFF  0/185  Ram=17
+   ³  ³     ÀÄ@ADDFF  1/433  Ram=20
    ³  ÃÄ@ITOF  0/31  Ram=2
-   ³  ÃÄ@MULFF  0/119  Ram=13
-   ³  ÃÄ@DIVFF  0/202  Ram=14
+   ³  ÃÄ@MULFF  0/185  Ram=17
+   ³  ÃÄ@DIVFF  1/204  Ram=14
    ³  ÃÄ@SFTOI  0/33  Ram=4
-   ³  ÃÄcos  1/660  Ram=67
+   ³  ÃÄcos  1/542  Ram=46
    ³  ³  ÀÄ*
    ³  ÃÄ@ITOF  0/31  Ram=2
-   ³  ÃÄ@MULFF  0/119  Ram=13
-   ³  ÃÄ@DIVFF  0/202  Ram=14
+   ³  ÃÄ@MULFF  0/185  Ram=17
+   ³  ÃÄ@DIVFF  1/204  Ram=14
    ³  ÃÄ@SFTOI  0/33  Ram=4
-   ³  ÃÄSSD1306_GotoXY  0/13  Ram=2
-   ³  ÃÄ@PRINTF_U_913  1/63  Ram=2
-   ³  ³  ÃÄ@DIV88  0/21  Ram=3
-   ³  ³  ÃÄSSD1306_PutC  0/123  Ram=5
+   ³  ÃÄSSD1306_GotoXY  0/19  Ram=2
+   ³  ÃÄ@PRINTF_U_929  0/65  Ram=2
+   ³  ³  ÃÄ@DIV88  0/23  Ram=3
+   ³  ³  ÃÄSSD1306_PutC  0/155  Ram=5
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄ@DIV88  0/21  Ram=3
-   ³  ³  ÃÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ÃÄ@DIV88  0/23  Ram=3
+   ³  ³  ÃÄSSD1306_PutC  0/155  Ram=5
    ³  ³  ³  ÀÄ*
-   ³  ³  ÀÄSSD1306_PutC  0/123  Ram=5
+   ³  ³  ÀÄSSD1306_PutC  0/155  Ram=5
    ³  ³     ÀÄ*
-   ³  ÃÄSSD1306_GotoXY  0/13  Ram=2
-   ³  ÃÄ@PSTRINGC7_913  0/86  Ram=4
+   ³  ÃÄSSD1306_GotoXY  0/19  Ram=2
+   ³  ÃÄ@PSTRINGC7_929  0/116  Ram=4
    ³  ³  ÀÄ*
-   ³  ÃÄSSD1306_GotoXY  0/13  Ram=2
-   ³  ÃÄ@PSTRINGC7_913  0/86  Ram=4
-   ³  ³  ÀÄ*
-   ³  ÃÄSSD1306_GotoXY  0/13  Ram=2
-   ³  ÃÄ@PRINTF_U_913  1/63  Ram=2
-   ³  ³  ÀÄ*
-   ³  ÃÄSSD1306_PutC  0/123  Ram=5
-   ³  ³  ÀÄ*
-   ³  ÃÄ@PRINTF_U_913  1/63  Ram=2
-   ³  ³  ÀÄ*
-   ³  ÃÄSSD1306_PutC  0/123  Ram=5
-   ³  ³  ÀÄ*
-   ³  ÃÄ@PRINTF_U_913  1/63  Ram=2
-   ³  ³  ÀÄ*
-   ³  ÃÄSSD1306_PutC  0/123  Ram=5
-   ³  ³  ÀÄ*
-   ³  ÀÄ@PRINTF_U_913  1/63  Ram=2
-   ³     ÀÄ*
-   ÀÄtimer0_ovf  0/91  Ram=0
+   ³  ÃÄSSD1306_DRAWDOT  1/306  Ram=3
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÃÄ@WRITEBITA  0/34  Ram=6
+   ³  ³  ÀÄ@WRITEBITA  0/34  Ram=6
+   ³  ÀÄSSD1306_UPDATEDISPLAY  1/416  Ram=9
+   ³     ÃÄssd1306_command  0/27  Ram=2
+   ³     ³  ÀÄ*
+   ³     ÃÄssd1306_command  0/27  Ram=2
+   ³     ³  ÀÄ*
+   ³     ÃÄssd1306_command  0/27  Ram=2
+   ³     ³  ÀÄ*
+   ³     ÃÄssd1306_command  0/27  Ram=2
+   ³     ³  ÀÄ*
+   ³     ÃÄssd1306_command  0/27  Ram=2
+   ³     ³  ÀÄ*
+   ³     ÃÄssd1306_command  0/27  Ram=2
+   ³     ³  ÀÄ*
+   ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@READBITA  0/27  Ram=5
+   ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³     ÀÄ@I2C_WRITEU_129  0/18  Ram=1
+   ÀÄtimer0_ovf  0/93  Ram=0

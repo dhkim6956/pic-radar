@@ -1,4 +1,5 @@
 #include <project.h>
+#include <math.h>
 
 // Interfacing PIC16F877A with SSD1306 OLED display (128x64 Pixel)
 // http://simple-circuit.com/
@@ -20,11 +21,22 @@ int16 loop0 = 0;
 int16 loop1 = 0;
 int rdir = 1;
 
-int8 angle = 30;
+int8 angle = 27;
+
+int clear = 0;
 
 int16 duration = 0;
-int16 distance = 0;
-unsigned int8 disp = 0;
+int8 distance = 0;
+
+int measure = 0;
+
+signed int rad = 0;
+float radf = 0;
+unsigned int8 posx = 0, posy = 0;
+unsigned int8 oledx = 0, oledy = 0;
+
+int leftside = 0;
+
 
 
 #INT_TIMER0                   //0.05ms timer interrupt
@@ -64,15 +76,15 @@ void timer0_ovf()
       } else {
          rdir = 0;
       }
+      clear = 1;
    }
    loop1 = 0;
   }
-}
-
-#INT_TIMER2
-void timer2_ovf()
-{
-   distance++;
+  
+  if(measure == 1)
+  {
+   duration++;
+  }
 }
 
 
@@ -81,7 +93,6 @@ void main() {
   
   
   enable_interrupts(INT_TIMER0);
-  enable_interrupts(INT_TIMER2);
   enable_interrupts(global);
   
   
@@ -105,6 +116,11 @@ void main() {
 
   while(TRUE) {
     
+    if(clear == 1)
+    {
+      SSD1306_ClearDisplay();
+      clear = 0;
+    }
     
     output_high(PIN_A0);
     delay_us(10);
@@ -113,15 +129,56 @@ void main() {
     while(!input(PIN_A1));
     duration = 0;
     distance = 0;
-    setup_timer_2(T2_DIV_BY_1, 0xF9, 1);
+    measure = 1;
     while(input(PIN_A1));
+    measure = 0;
     
-    distance = (170*(duration * 50))/100;
+    distance = (duration * 50)/58;     //distance (cm)
     
-    disp = distance / 2;
+    if(distance < 24 && distance > 3)
+    {
+      
+      
+      rad = (angle - 27)*6;
+      if(rad < 0)
+      {
+         rad *= -1;
+         leftside = 0;
+      } else {
+         leftside = 1;
+      }
+      
+      radf = pi / 180 * rad;
+      
+      posx = sin(radf) * distance / 3;
+      posy = cos(radf) * distance / 3;
+      
+      if(leftside == 1) {
+         oledx = 11 - posx;
+      } else {
+         oledx = 11 + posx;
+      }
+      oledy = 8 - posy;
+      
+      SSD1306_GotoXY(1, 1);
+      printf(SSD1306_PutC, "%02u", distance);
     
-    SSD1306_GotoXY(21, 1);
-    printf(SSD1306_PutC, "%03u", disp);
+      SSD1306_GotoXY(1, 2);
+      SSD1306_PutC("(cm)");
+      
+      SSD1306_GotoXY(oledx, oledy);
+      SSD1306_PutC("o");
+      
+      
+      
+      SSD1306_GotoXY(10, 1);
+      printf(SSD1306_PutC, "%02u %02u %02u %02u", oledx, oledy, posx, posy);
+      
+    } else {
+      distance = 0;
+    }
+    
+    
   }
 
 }
