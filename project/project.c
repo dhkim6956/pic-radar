@@ -26,9 +26,7 @@ int8 angle = 27;
 int clear = 0;
 
 int16 duration = 0;
-int16 distance = 0;
-unsigned int8 inrange = 0;
-unsigned int8 remain = 0;
+int8 distance = 0;
 
 int measure = 0;
 
@@ -137,10 +135,9 @@ void main() {
     
     distance = (duration * 50)/58;     //distance (cm)
     
-    if(distance < 160 && distance > 3)
+    if(distance < 24 && distance > 3)
     {
-      inrange = distance / 10;
-      remain = distance % 10;
+      
       
       rad = (angle - 27)*6;
       if(rad < 0)
@@ -153,8 +150,8 @@ void main() {
       
       radf = pi / 180 * rad;
       
-      posx = sin(radf) * inrange / 2;
-      posy = cos(radf) * inrange / 2;
+      posx = sin(radf) * distance / 3;
+      posy = cos(radf) * distance / 3;
       
       if(leftside == 1) {
          oledx = 11 - posx;
@@ -164,7 +161,7 @@ void main() {
       oledy = 8 - posy;
       
       SSD1306_GotoXY(1, 1);
-      printf(SSD1306_PutC, "%02u%d", inrange, remain);
+      printf(SSD1306_PutC, "%02u", distance);
     
       SSD1306_GotoXY(1, 2);
       SSD1306_PutC("(cm)");
@@ -178,7 +175,7 @@ void main() {
       printf(SSD1306_PutC, "%02u %02u %02u %02u", oledx, oledy, posx, posy);
       
     } else {
-      inrange = 0;
+      distance = 0;
     }
     
     

@@ -1,9 +1,9 @@
-D G "__PCM__" 0 190 ""5.105Pd""
-D G "__DEVICE__" 0 190 "877"
-D G "__DATE__" 0 190 ""24-Nov-21""
-D G "__TIME__" 0 190 ""07:07:13""
-D G "_UNICODE" 0 190 ""?""
-D G "__EVAL" 0 190 ""?"" "Standard Header file for the PIC16F877A device ////////////////"
+D G "__PCM__" 0 0 ""5.105Pd""
+D G "__DEVICE__" 0 0 ""
+D G "__DATE__" 0 0 ""29-Nov-21""
+D G "__TIME__" 0 0 ""14:03:55""
+D G "_UNICODE" 0 0 ""?""
+D G "__EVAL" 0 0 ""?"" "Standard Header file for the PIC16F877A device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 F N "set_tris_a" 2 37 ""
 V L "value" 2 37 "int8" `55 
@@ -389,9 +389,9 @@ F N "read_adc" 2 373 ""
 f G "read_adc" 2 373 "int16()" `207 
 F N "read_adc" 2 374 ""
 V L "mode" 2 374 "int8" `208 
-f G "read_adc" 2 374 "int16(int8 mode,int8 setting)" `207 
+f G "read_adc" 2 374 "int16(int8 mode)" `207 
 F N "adc_done" 2 375 ""
-F B "adc_done" 2 375 "int8(int8 mode,int8 setting)" `207  "Constants used for SETUP_ADC() are:"
+F B "adc_done" 2 375 "int8(int8 mode)" `207  "Constants used for SETUP_ADC() are:"
 D G "ADC_OFF" 2 377 "0" "ADC Off"
 D G "ADC_CLOCK_DIV_2" 2 378 "0x10000"
 D G "ADC_CLOCK_DIV_4" 2 379 "0x4000"
@@ -836,9 +836,9 @@ F B "i2c_transfer_in" 2 546 "int8(int8 stream,int8 address,*int8 rData,int8 rCou
 F N "spi_xfer" 2 549 ""
 F B "spi_xfer" 2 549 "int8()" `502 
 F N "spi_xfer" 2 550 ""
-f G "spi_xfer" 2 550 "int16(int8 data)" `503 
+f G "spi_xfer" 2 550 "int16()" `503 
 F N "spi_xfer" 2 551 ""
-f G "spi_xfer" 2 551 "int32(int8 data)" `503 
+f G "spi_xfer" 2 551 "int32()" `503 
 F N "spi_xfer" 2 552 ""
 V L "data" 2 552 "int8" `504 
 F B "spi_xfer" 2 552 "int8(int8 data)" `503 
@@ -918,18 +918,18 @@ F B "spi_prewrite" 2 571 "void(int8 ,int32 data)" `556
 F N "spi_xfer_in" 2 572 ""
 F B "spi_xfer_in" 2 572 "int8()" `559 
 F N "spi_xfer_in" 2 573 ""
-f G "spi_xfer_in" 2 573 "int16(int8 bits)" `560 
+f G "spi_xfer_in" 2 573 "int16()" `560 
 F N "spi_xfer_in" 2 574 ""
-f G "spi_xfer_in" 2 574 "int32(int8 bits)" `560 
+f G "spi_xfer_in" 2 574 "int32()" `560 
 F N "spi_xfer_in" 2 575 ""
 V L "bits" 2 575 "int8" `561 
 F B "spi_xfer_in" 2 575 "int8(int8 bits)" `560 
 F N "spi_xfer_in" 2 576 ""
 V L "bits" 2 576 "int8" `563 
-f G "spi_xfer_in" 2 576 "int16(int8 bits,int8 bits)" `562 
+f G "spi_xfer_in" 2 576 "int16(int8 bits)" `562 
 F N "spi_xfer_in" 2 577 ""
 V L "bits" 2 577 "int8" `563 
-f G "spi_xfer_in" 2 577 "int32(int8 bits,int8 bits)" `562 
+f G "spi_xfer_in" 2 577 "int32(int8 bits)" `562 
 F N "spi_xfer_in" 2 578 ""
 V L "stream" 2 578 "int8" `563 
 V L "bits" 2 578 "int8" `564 
@@ -937,11 +937,11 @@ F B "spi_xfer_in" 2 578 "int8(int8 stream,int8 bits)" `562
 F N "spi_xfer_in" 2 579 ""
 V L "stream" 2 579 "int8" `563 
 V L "bits" 2 579 "int8" `567 
-f G "spi_xfer_in" 2 579 "int16(int8 stream,int8 bits,int16 count)" `565 
+f G "spi_xfer_in" 2 579 "int16(int8 stream,int8 bits)" `565 
 F N "spi_xfer_in" 2 580 ""
 V L "stream" 2 580 "int8" `563 
 V L "bits" 2 580 "int8" `567 
-f G "spi_xfer_in" 2 580 "int32(int8 stream,int8 bits,int16 count)" `565 
+f G "spi_xfer_in" 2 580 "int32(int8 stream,int8 bits)" `565 
 F N "spi_transfer" 2 581 ""
 V L "wData" 2 581 "*int8" `566 
 V L "rData" 2 581 "*int8" `567 
@@ -1010,9 +1010,9 @@ F B "rtos_stats" 2 601 "void(int8 task,*int8 stat)" `608  "#use timer() Prototyp
 F N "get_ticks" 2 604 ""
 F B "get_ticks" 2 604 "int8()" `611 
 F N "get_ticks" 2 605 ""
-f G "get_ticks" 2 605 "int16(int8 stream)" `612 
+f G "get_ticks" 2 605 "int16()" `612 
 F N "get_ticks" 2 606 ""
-f G "get_ticks" 2 606 "int32(int8 stream)" `612 
+f G "get_ticks" 2 606 "int32()" `612 
 F N "get_ticks" 2 607 ""
 V L "stream" 2 607 "int8" `613 
 F B "get_ticks" 2 607 "int8(int8 stream)" `612 
@@ -1552,24 +1552,22 @@ V G "rdir" 0 22 "int8" `935
 V G "angle" 0 24 "int8" `936 
 V G "clear" 0 26 "int8" `937 
 V G "duration" 0 28 "int16" `938 
-V G "distance" 0 29 "int16" `939 
-V G "inrange" 0 30 "int8" `940 
-V G "remain" 0 31 "int8" `941 
-V G "measure" 0 33 "int8" `942 
-V G "rad" 0 35 "sint8" `943 
-V G "radf" 0 36 "float" `944 
-V G "posx" 0 37 "int8" `945 
-V G "posy" 0 37 "int8" `946 
-V G "oledx" 0 38 "int8" `947 
-V G "oledy" 0 38 "int8" `948 
-V G "leftside" 0 40 "int8" `949 
-F N "timer0_ovf" 0 45 ""
-F G "timer0_ovf" 0 46 "void()" `950 
-F N "MAIN" 0 93 ""
-F G "MAIN" 0 93 "void()" `951 
-C L "MAIN" 0 103 1 "FUNCTION"
-C L "MAIN" 0 103 1 "FUNCTION"
-C L "MAIN" 0 103 1 "FUNCTION"
+V G "distance" 0 29 "int8" `939 
+V G "measure" 0 31 "int8" `940 
+V G "rad" 0 33 "sint8" `941 
+V G "radf" 0 34 "float" `942 
+V G "posx" 0 35 "int8" `943 
+V G "posy" 0 35 "int8" `944 
+V G "oledx" 0 36 "int8" `945 
+V G "oledy" 0 36 "int8" `946 
+V G "leftside" 0 38 "int8" `947 
+F N "timer0_ovf" 0 43 ""
+F G "timer0_ovf" 0 44 "void()" `948 
+F N "MAIN" 0 91 ""
+F G "MAIN" 0 91 "void()" `949 
+C L "MAIN" 0 101 1 "FUNCTION"
+C L "MAIN" 0 101 1 "FUNCTION"
+C L "MAIN" 0 101 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 0
