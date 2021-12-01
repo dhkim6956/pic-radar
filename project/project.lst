@@ -1,4 +1,4 @@
-CCS PCM C Compiler, Version 5.105Pd, 1               29-11-21 17:08
+CCS PCM C Compiler, Version 5.105Pd, 1               29-11-21 17:26
 Compiler operating in Evaluation Mode
 To obtain a fully enabled compiler visit www.ccsinfo.com/products
 
@@ -7097,15 +7097,15 @@ To obtain a fully enabled compiler visit www.ccsinfo.com/products
 026C:  INCF   74,F
 ....................   } else {
 026D:  GOTO   28A
-....................    if (scantime == 1 && angle < 42) {
+....................    if (scantime == 1 && angle > 12) {
 026E:  DECFSZ 75,W
 026F:  GOTO   27A
 0270:  MOVF   7B,W
-0271:  SUBLW  29
-0272:  BTFSS  03.0
+0271:  SUBLW  0C
+0272:  BTFSC  03.0
 0273:  GOTO   27A
-....................       angle++;
-0274:  INCF   7B,F
+....................       angle--;
+0274:  DECF   7B,F
 ....................       if (angle == 42) {
 0275:  MOVF   7B,W
 0276:  SUBLW  2A
@@ -7118,8 +7118,8 @@ To obtain a fully enabled compiler visit www.ccsinfo.com/products
 027A:  MOVF   75,F
 027B:  BTFSS  03.2
 027C:  GOTO   288
-....................       angle = 12;
-027D:  MOVLW  0C
+....................       angle = 42;
+027D:  MOVLW  2A
 027E:  MOVWF  7B
 ....................       displaytime++;
 027F:  INCF   76,F

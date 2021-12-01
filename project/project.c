@@ -68,13 +68,13 @@ void timer0_ovf()
   {
    loop1++;
   } else {
-   if (scantime == 1 && angle < 42) {
-      angle++;
+   if (scantime == 1 && angle > 12) {
+      angle--;
       if (angle == 42) {
          scantime = 0;
       }
    } else if (scantime == 0) {
-      angle = 12;
+      angle = 42;
       displaytime++;
       if (displaytime == 30) {
          scantime = 1;

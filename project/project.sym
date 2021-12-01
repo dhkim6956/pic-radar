@@ -284,7 +284,7 @@ Project Directory:
     C:\Users\dhkim\Documents\GitHub\pic16f877a_SSD1306_i2c_radar_project\project\
 
 Project Files:
-    project.c                                               [29-11-21 17:08  CRC=68089243]
+    project.c                                               [29-11-21 17:26  CRC=68089243]
     project.h                                               [17-11-21 08:55  CRC=00000000]
     ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [12-7-21 11:35  CRC=4E256CC5]
     ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\math.h [05-5-20 13:57  CRC=02232397]
@@ -293,7 +293,7 @@ Project Files:
 
 Source signature=4F382C52
 Program memory checksum=0000
-Hex file CRC=14E5
+Hex file CRC=094D
 
 Units:
     C:\Users\dhkim\Documents\GitHub\pic16f877a_SSD1306_i2c_radar_project\project\project (main)
